@@ -1,0 +1,213 @@
+Welcome to the Whispering Wilds. Type 'help' for commands.
+Sanctum
+A quiet stone atrium with mossy pillars.
+Items here: Rusty Key
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+Items here: Rusty Key
+You see: Caretaker
+Exits: e, n, s, w
+> take rust_key
+take rust_key
+You take the Rusty Key.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> use rust_key
+use rust_key
+The rusty key turns with a harsh scrape. The gate is unlocked.
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> w
+w
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> n
+n
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> look
+look
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> forage
+forage
+You find 1 herb.
+> forage
+forage
+You find 1 herb.
+> forage
+forage
+You find 1 fiber.
+> craft bandage
+craft bandage
+You craft a bandage.
+A wild Bog Shade appears!
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade strikes you (-1 HP).
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade glares at you.
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade strikes you (-2 HP).
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade dissipates.
+Victory! (+1 XP, +1 gold)
+> attack
+attack
+There is nothing to attack here.
+> use bandage
+use bandage
+You use a bandage. HP restored.
+> look
+look
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> take mint
+take mint
+You take the Wild Mint.
+> take reed_cloak
+take reed_cloak
+You take the Reed Cloak.
+> take grove_charm
+take grove_charm
+You take the Grove Charm.
+> look
+look
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Exits: e, s
+> s
+s
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> e
+e
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> look
+look
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> e
+e
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> e
+e
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> look
+look
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> s
+s
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> look
+look
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> e
+e
+Trader's Post
+A makeshift counter piled with oddments.
+You see: Trader
+Exits: w
+> look
+look
+Trader's Post
+A makeshift counter piled with oddments.
+You see: Trader
+Exits: w
+> sell mint
+sell mint
+Sold mint for 1 gold.
+> sell reed_cloak
+sell reed_cloak
+Sold reed_cloak for 2 gold.
+> buy apple
+buy apple
+You bought apple.
+> inv
+inv
+Inventory: Rusty Key, Grove Charm, Apple
+Materials: herb x2
+Equipped: weapon=(empty), armor=(empty), trinket=(empty)
+> quit

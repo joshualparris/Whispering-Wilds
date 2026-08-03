@@ -1,0 +1,864 @@
+Welcome to the Whispering Wilds. Type 'help' for commands.
+Sanctum
+A quiet stone atrium with mossy pillars.
+Items here: Rusty Key
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+Items here: Rusty Key
+You see: Caretaker
+Exits: e, n, s, w
+> take rust_key
+take rust_key
+You take the Rusty Key.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> use rust_key
+use rust_key
+The rusty key turns with a harsh scrape. The gate is unlocked.
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> e
+e
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> look
+look
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> e
+e
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> hunt
+hunt
+You search the area for prey...
+A wild Whisper Wolf appears!
+The Whisper Wolf glares at you.
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf strikes you (-2 HP).
+You are bleeding!
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+You bleed (-1 HP).
+The Whisper Wolf glares at you.
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf dissipates.
+Victory! (+1 XP, +1 gold)
+You bleed (-1 HP).
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> hunt
+hunt
+You search the area for prey...
+A wild Bramble Wight appears!
+You bleed (-1 HP).
+The Bramble Wight glares at you.
+> attack
+attack
+You strike the Bramble Wight for 1 damage!
+You bleed (-1 HP).
+The Bramble Wight glares at you.
+> attack
+attack
+You strike the Bramble Wight for 1 damage!
+You bleed (-1 HP).
+The Bramble Wight glares at you.
+> attack
+attack
+You strike the Bramble Wight for 1 damage!
+You bleed (-1 HP).
+The Bramble Wight glares at you.
+> attack
+attack
+You strike the Bramble Wight for 1 damage!
+You bleed (-1 HP).
+The Bramble Wight strikes you (-1 HP).
+You are bleeding!
+You collapse and awaken at the Sanctum.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> e
+e
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> look
+look
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> e
+e
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> hunt
+hunt
+You search the area for prey...
+A wild Glimmer Moth appears!
+The Glimmer Moth strikes you (-2 HP).
+> attack
+attack
+You strike the Glimmer Moth for 1 damage!
+The Glimmer Moth glares at you.
+> attack
+attack
+You strike the Glimmer Moth for 1 damage!
+The Glimmer Moth dissipates.
+Victory! (+1 XP, +1 gold)
+A wild Stone Gnaw appears!
+> attack
+attack
+You strike the Stone Gnaw for 1 damage!
+The Stone Gnaw strikes you (-2 HP).
+> attack
+attack
+You strike the Stone Gnaw for 1 damage!
+The Stone Gnaw dissipates.
+Victory! (+1 XP, +1 gold)
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> hunt
+hunt
+You search the area for prey...
+A wild Fen Serpent appears!
+The Fen Serpent glares at you.
+> attack
+attack
+You strike the Fen Serpent for 1 damage!
+The Fen Serpent glares at you.
+> attack
+attack
+You strike the Fen Serpent for 1 damage!
+The Fen Serpent glares at you.
+> attack
+attack
+You strike the Fen Serpent for 1 damage!
+The Fen Serpent dissipates.
+Victory! (+1 XP, +1 gold)
+A wild Bog Shade appears!
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade strikes you (-2 HP).
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade strikes you (-1 HP).
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade strikes you (-1 HP).
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade dissipates.
+Victory! (+1 XP, +1 gold)
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> hunt
+hunt
+You search the area for prey...
+A wild Glimmer Moth appears!
+The Glimmer Moth strikes you (-2 HP).
+You collapse and awaken at the Sanctum.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> e
+e
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> look
+look
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> e
+e
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> hunt
+hunt
+You search the area for prey...
+A wild Whisper Wolf appears!
+The Whisper Wolf glares at you.
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf glares at you.
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf strikes you (-1 HP).
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf dissipates.
+Victory! (+1 XP, +1 gold)
+A wild Bog Shade appears!
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade glares at you.
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade strikes you (-1 HP).
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade strikes you (-2 HP).
+You have been chilled!
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+You shiver from the chill (-1 HP).
+The Bog Shade strikes you (-1 HP).
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade dissipates.
+Victory! (+1 XP, +1 gold)
+You shiver from the chill (-1 HP).
+A wild Stone Gnaw appears!
+> attack
+attack
+You strike the Stone Gnaw for 1 damage!
+You shiver from the chill (-1 HP).
+The Stone Gnaw glares at you.
+> attack
+attack
+You strike the Stone Gnaw for 1 damage!
+You shiver from the chill (-1 HP).
+The Stone Gnaw strikes you (-2 HP).
+You collapse and awaken at the Sanctum.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> e
+e
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> look
+look
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> e
+e
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> hunt
+hunt
+You search the area for prey...
+A wild Whisper Wolf appears!
+The Whisper Wolf strikes you (-1 HP).
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf strikes you (-2 HP).
+You are bleeding!
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+You bleed (-1 HP).
+The Whisper Wolf strikes you (-1 HP).
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf dissipates.
+Victory! (+1 XP, +1 gold)
+You bleed (-1 HP).
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> hunt
+hunt
+You search the area for prey...
+A wild Whisper Wolf appears!
+You bleed (-1 HP).
+The Whisper Wolf strikes you (-1 HP).
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+You bleed (-1 HP).
+The Whisper Wolf glares at you.
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+You bleed (-1 HP).
+You collapse and awaken at the Sanctum.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> e
+e
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> look
+look
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> e
+e
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> hunt
+hunt
+You search the area for prey...
+A wild Glimmer Moth appears!
+The Glimmer Moth strikes you (-1 HP).
+> attack
+attack
+You strike the Glimmer Moth for 1 damage!
+The Glimmer Moth glares at you.
+> attack
+attack
+You strike the Glimmer Moth for 1 damage!
+The Glimmer Moth dissipates.
+Victory! (+1 XP, +1 gold)
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> hunt
+hunt
+You search the area for prey...
+A wild Fen Serpent appears!
+The Fen Serpent glares at you.
+> attack
+attack
+You strike the Fen Serpent for 1 damage!
+The Fen Serpent strikes you (-1 HP).
+You have been poisoned!
+> attack
+attack
+You strike the Fen Serpent for 1 damage!
+Poison courses through your veins (-1 HP).
+The Fen Serpent glares at you.
+> attack
+attack
+You strike the Fen Serpent for 1 damage!
+Poison courses through your veins (-1 HP).
+The Fen Serpent strikes you (-2 HP).
+> attack
+attack
+You strike the Fen Serpent for 1 damage!
+Poison courses through your veins (-1 HP).
+The Fen Serpent strikes you (-2 HP).
+> attack
+attack
+You strike the Fen Serpent for 1 damage!
+The Fen Serpent dissipates.
+Victory! (+1 XP, +1 gold)
+Poison courses through your veins (-1 HP).
+You collapse and awaken at the Sanctum.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> e
+e
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> look
+look
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> e
+e
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> quit

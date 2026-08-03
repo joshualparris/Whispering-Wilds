@@ -1,0 +1,646 @@
+Welcome to the Whispering Wilds. Type 'help' for commands.
+Sanctum
+A quiet stone atrium with mossy pillars.
+Items here: Rusty Key
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+Items here: Rusty Key
+You see: Caretaker
+Exits: e, n, s, w
+> talk
+talk
+--- Talking to Caretaker ---
+1. Who are you?
+2. What is this place?
+3. Tell me about the Whispering Wilds.
+4. What threats lie beyond these walls?
+5. What can you tell me about the grove?
+6. Is there any work I can do?
+7. Goodbye.
+Type 'say <number>' to choose.
+> say 7
+say 7
+You end the conversation.
+> help
+help
+Available commands: move, look, take, drop, inv, stats, use, bandage, equip, unequip, hunt, attack, flee, rest, fish, mine, forage, harvest, craft, map, journal, note, erase, options hardmode, bestiary, lore, talk, save, load, quit
+> map
+map
+Visited rooms:
+- Sanctum
+> stats
+stats
+HP: 10/10 | Gold: 0 | XP: 0
+ATK: 0 | DEF: 0
+Status: Healthy
+> hardmode on
+hardmode on
+Hard mode is now ON.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+Items here: Rusty Key
+You see: Caretaker
+Exits: e, n, s, w
+> take rust_key
+take rust_key
+You take the Rusty Key.
+> drop rust_key
+drop rust_key
+You drop the Rusty Key.
+> take rust_key
+take rust_key
+You take the Rusty Key.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> use rust_key
+use rust_key
+The rusty key turns with a harsh scrape. The gate is unlocked.
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> w
+w
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> s
+s
+Sunken Cellar
+Damp stone, old crates, and a chill draft.
+Items here: Old Torch, Rust Dagger
+Exits: e, n
+> look
+look
+Sunken Cellar
+Damp stone, old crates, and a chill draft.
+Items here: Old Torch, Rust Dagger
+Exits: e, n
+> take rust_dagger
+take rust_dagger
+You take the Rust Dagger.
+A wild Glimmer Moth appears!
+> attack
+attack
+You strike the Glimmer Moth for 1 damage!
+The Glimmer Moth dissipates.
+Victory! (+1 XP, +1 gold)
+A wild Whisper Wolf appears!
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf glares at you.
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf strikes you (-2 HP).
+You are bleeding!
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+You bleed (-1 HP).
+The Whisper Wolf glares at you.
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf dissipates.
+Victory! (+1 XP, +1 gold)
+You bleed (-1 HP).
+> equip rust_dagger
+equip rust_dagger
+You equipped Rust Dagger.
+You bleed (-1 HP).
+> look
+look
+Sunken Cellar
+Damp stone, old crates, and a chill draft.
+Items here: Old Torch
+Exits: e, n
+> e
+e
+Southern Thicket
+Close-set shrubs tug at your sleeves.
+Exits: w
+You bleed (-1 HP).
+> look
+look
+Southern Thicket
+Close-set shrubs tug at your sleeves.
+Exits: w
+> hunt
+hunt
+You search the area for prey...
+A wild Camp Raider appears!
+You bleed (-1 HP).
+The Camp Raider glares at you.
+> attack
+attack
+You strike the Camp Raider for 1 damage!
+You bleed (-1 HP).
+The Camp Raider glares at you.
+> attack
+attack
+You strike the Camp Raider for 1 damage!
+You bleed (-1 HP).
+The Camp Raider strikes you (-2 HP).
+You collapse and awaken at the Sanctum.
+> attack
+attack
+There is nothing to attack here.
+> hunt
+hunt
+There is no prey here.
+> hunt
+hunt
+There is no prey here.
+> hunt
+hunt
+There is no prey here.
+> hunt
+hunt
+There is no prey here.
+> rest
+rest
+You are already fully rested.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> e
+e
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> look
+look
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> e
+e
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> e
+e
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> look
+look
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> s
+s
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> look
+look
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> camp
+camp
+You are already fully rested.
+> look
+look
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> e
+e
+Trader's Post
+A makeshift counter piled with oddments.
+You see: Trader
+Exits: w
+> look
+look
+Trader's Post
+A makeshift counter piled with oddments.
+You see: Trader
+Exits: w
+> talk
+talk
+--- Talking to Trader ---
+1. Who are you?
+2. Any work?
+3. Goodbye.
+Type 'say <number>' to choose.
+> say 3
+say 3
+You end the conversation.
+> look
+look
+Trader's Post
+A makeshift counter piled with oddments.
+You see: Trader
+Exits: w
+> w
+w
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> look
+look
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> n
+n
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> look
+look
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> n
+n
+Moonlit Lake
+A cold, glassy lake. Ripples reveal darting shapes.
+Exits: s
+> look
+look
+Moonlit Lake
+A cold, glassy lake. Ripples reveal darting shapes.
+Exits: s
+> fish
+fish
+You catch a fish.
+A wild Camp Raider appears!
+> attack
+attack
+You strike the Camp Raider for 1 damage!
+The Camp Raider glares at you.
+> attack
+attack
+You strike the Camp Raider for 1 damage!
+The Camp Raider glares at you.
+> attack
+attack
+You strike the Camp Raider for 1 damage!
+The Camp Raider strikes you (-3 HP).
+> attack
+attack
+You strike the Camp Raider for 1 damage!
+The Camp Raider glares at you.
+> attack
+attack
+You strike the Camp Raider for 1 damage!
+The Camp Raider dissipates.
+Victory! (+1 XP, +1 gold)
+A wild Bramble Wight appears!
+> attack
+attack
+You strike the Bramble Wight for 1 damage!
+The Bramble Wight glares at you.
+> attack
+attack
+You strike the Bramble Wight for 1 damage!
+The Bramble Wight strikes you (-3 HP).
+> attack
+attack
+You strike the Bramble Wight for 1 damage!
+The Bramble Wight strikes you (-3 HP).
+You are bleeding!
+> attack
+attack
+You strike the Bramble Wight for 1 damage!
+The Bramble Wight dissipates.
+Victory! (+1 XP, +1 gold)
+You bleed (-1 HP).
+You collapse and awaken at the Sanctum.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> e
+e
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> look
+look
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> e
+e
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> e
+e
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> look
+look
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> s
+s
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> look
+look
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> cook cooked_fish
+cook cooked_fish
+You craft a cooked_fish.
+> use cooked_fish
+use cooked_fish
+You eat the cooked fish. It's hearty.
+> lore stone
+lore stone
+You haven't discovered that creature yet.
+> look
+look
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> n
+n
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> look
+look
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> w
+w
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> n
+n
+Old Watchtower
+Cracked stairs spiral into shadow; graffiti marks the stone.
+Exits: e, s, w
+> look
+look
+Old Watchtower
+Cracked stairs spiral into shadow; graffiti marks the stone.
+Exits: e, s, w
+> w
+w
+Hermit's Hut
+Bundles of herbs hang from the rafters.
+You see: Hermit
+Exits: e
+> look
+look
+Hermit's Hut
+Bundles of herbs hang from the rafters.
+You see: Hermit
+Exits: e
+> harvest
+harvest
+You harvested a glowcap.
+> look
+look
+Hermit's Hut
+Bundles of herbs hang from the rafters.
+You see: Hermit
+Exits: e
+> e
+e
+Old Watchtower
+Cracked stairs spiral into shadow; graffiti marks the stone.
+Exits: e, s, w
+> look
+look
+Old Watchtower
+Cracked stairs spiral into shadow; graffiti marks the stone.
+Exits: e, s, w
+> s
+s
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> w
+w
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> look
+look
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> w
+w
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> w
+w
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> n
+n
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> look
+look
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> forage
+forage
+You find 1 fiber.
+A wild Stone Gnaw appears!
+> attack
+attack
+You strike the Stone Gnaw for 1 damage!
+The Stone Gnaw strikes you (-3 HP).
+> attack
+attack
+You strike the Stone Gnaw for 1 damage!
+The Stone Gnaw dissipates.
+Victory! (+1 XP, +1 gold)
+> look
+look
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> forage
+forage
+You find 1 fiber.
+> look
+look
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> forage
+forage
+You find 1 fiber.
+> look
+look
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> forage
+forage
+You find 1 fiber.
+> look
+look
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> forage
+forage
+You find 1 herb.
+> craft tonic
+craft tonic
+You craft a glowcap_tonic.
+> use glowcap_tonic
+use glowcap_tonic
+You drink the tonic. Poison neutralized.
+> look
+look
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> s
+s
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> talk
+talk
+There is no one here to talk to.
+> quit

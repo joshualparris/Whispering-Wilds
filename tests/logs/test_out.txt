@@ -1,0 +1,155 @@
+EF/usr/lib64/python3.14/pickle.py:1244: ResourceWarning: unclosed file <_io.FileIO name='/home/josh/dev/Whispering-Wilds/tests/e2e/transcripts/test_ending_gate.log' mode='wb' closefd=True>
+  class _Unpickler:
+/usr/lib64/python3.14/unittest/case.py:668: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/josh/dev/Whispering-Wilds/tests/e2e/transcripts/test_quest_rejection.log' mode='w' encoding='UTF-8'>
+  with outcome.testPartExecutor(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+F/usr/lib64/python3.14/unittest/case.py:668: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/josh/dev/Whispering-Wilds/tests/e2e/transcripts/test_combat_victory.log' mode='w' encoding='UTF-8'>
+  with outcome.testPartExecutor(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+F/usr/lib64/python3.14/unittest/case.py:668: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/josh/dev/Whispering-Wilds/tests/e2e/transcripts/test_economy_and_crafting.log' mode='w' encoding='UTF-8'>
+  with outcome.testPartExecutor(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+EF/usr/lib64/python3.14/unittest/case.py:668: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/josh/dev/Whispering-Wilds/tests/e2e/transcripts/test_save_load.log' mode='w' encoding='UTF-8'>
+  with outcome.testPartExecutor(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+
+======================================================================
+ERROR: test_ending_gate (test_01_ending_gate.TestEndingGate.test_ending_gate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/josh/dev/Whispering-Wilds/tests/e2e/test_01_ending_gate.py", line 66, in test_ending_gate
+    o = h.command("save")
+  File "/home/josh/dev/Whispering-Wilds/tests/e2e/cli_harness.py", line 24, in command
+    self.child.expect("> ")
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/site-packages/pexpect/spawnbase.py", line 354, in expect
+    return self.expect_list(compiled_pattern_list,
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+            timeout, searchwindowsize, async_)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/site-packages/pexpect/spawnbase.py", line 383, in expect_list
+    return exp.expect_loop(timeout)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3.14/site-packages/pexpect/expect.py", line 179, in expect_loop
+    return self.eof(e)
+           ~~~~~~~~^^^
+  File "/usr/lib/python3.14/site-packages/pexpect/expect.py", line 122, in eof
+    raise exc
+pexpect.exceptions.EOF: End Of File (EOF). Exception style platform.
+<pexpect.pty_spawn.spawn object at 0x7fca4b863b60>
+command: /bin/python3
+args: [b'/bin/python3', b'src/main.py', b'--seed', b'42']
+buffer (last 100 chars): ''
+before (last 100 chars): "31m^^\x1b[0m\r\n\x1b[1;35mNameError\x1b[0m: \x1b[35mname 'os' is not defined. Did you forget to import 'os'?\x1b[0m\r\n"
+after: <class 'pexpect.exceptions.EOF'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: True
+pid: 1783688
+child_fd: 18
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <_io.TextIOWrapper name='/home/josh/dev/Whispering-Wilds/tests/e2e/transcripts/test_ending_gate.log' mode='w' encoding='UTF-8'>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_re:
+    0: re.compile('> ')
+
+======================================================================
+ERROR: test_malformed_save (test_05_save_and_load.TestSaveAndLoad.test_malformed_save)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/josh/dev/Whispering-Wilds/tests/e2e/test_05_save_and_load.py", line 66, in test_malformed_save
+    o = h.command("load")
+  File "/home/josh/dev/Whispering-Wilds/tests/e2e/cli_harness.py", line 24, in command
+    self.child.expect("> ")
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/site-packages/pexpect/spawnbase.py", line 354, in expect
+    return self.expect_list(compiled_pattern_list,
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+            timeout, searchwindowsize, async_)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/site-packages/pexpect/spawnbase.py", line 383, in expect_list
+    return exp.expect_loop(timeout)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3.14/site-packages/pexpect/expect.py", line 179, in expect_loop
+    return self.eof(e)
+           ~~~~~~~~^^^
+  File "/usr/lib/python3.14/site-packages/pexpect/expect.py", line 122, in eof
+    raise exc
+pexpect.exceptions.EOF: End Of File (EOF). Exception style platform.
+<pexpect.pty_spawn.spawn object at 0x7fca4b856fd0>
+command: /bin/python3
+args: [b'/bin/python3', b'src/main.py', b'--seed', b'42']
+buffer (last 100 chars): ''
+before (last 100 chars): "31m^^\x1b[0m\r\n\x1b[1;35mNameError\x1b[0m: \x1b[35mname 'os' is not defined. Did you forget to import 'os'?\x1b[0m\r\n"
+after: <class 'pexpect.exceptions.EOF'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: True
+pid: 1784573
+child_fd: 18
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <_io.TextIOWrapper name='/home/josh/dev/Whispering-Wilds/tests/e2e/transcripts/test_malformed_save.log' mode='w' encoding='UTF-8'>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_re:
+    0: re.compile('> ')
+
+======================================================================
+FAIL: test_quest_rejection (test_02_quest_rejection.TestQuestRejection.test_quest_rejection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/josh/dev/Whispering-Wilds/tests/e2e/test_02_quest_rejection.py", line 22, in test_quest_rejection
+    self.assertIn("caretaker is not here", o.lower())
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'caretaker is not here' not found in 'talk caretaker\r\nthere is no one here to talk to.\r\n'
+
+======================================================================
+FAIL: test_combat_victory (test_03_combat_victory.TestCombatVictory.test_combat_victory)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/josh/dev/Whispering-Wilds/tests/e2e/test_03_combat_victory.py", line 24, in test_combat_victory
+    self.assertIn("(+1 XP)", o)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+AssertionError: '(+1 XP)' not found in 'attack\r\nYou strike the Stone Gnaw for 1 damage!\r\nThe Stone Gnaw dissipates.\r\nVictory! (+1 XP, +1 gold)\r\n'
+
+======================================================================
+FAIL: test_economy_and_crafting (test_04_economy_and_crafting.TestEconomyAndCrafting.test_economy_and_crafting)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/josh/dev/Whispering-Wilds/tests/e2e/test_04_economy_and_crafting.py", line 27, in test_economy_and_crafting
+    self.assertIn("You craft a bandage", o)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'You craft a bandage' not found in 'attack\r\nYou strike the Bog Shade for 1 damage!\r\nThe Bog Shade dissipates.\r\nVictory! (+1 XP, +1 gold)\r\n'
+
+======================================================================
+FAIL: test_save_and_load_fields (test_05_save_and_load.TestSaveAndLoad.test_save_and_load_fields)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/josh/dev/Whispering-Wilds/tests/e2e/test_05_save_and_load.py", line 30, in test_save_and_load_fields
+    self.assertIn("Game saved", o)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: 'Game saved' not found in 'save\r\nYou cannot save during combat!\r\n'
+
+----------------------------------------------------------------------
+Ran 6 tests in 11.446s
+
+FAILED (failures=4, errors=2)

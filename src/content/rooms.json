@@ -1,0 +1,222 @@
+[
+  {
+    "id": "grove_n",
+    "name": "Northern Grove",
+    "desc": "Silver-barked trees and soft leaf litter.",
+    "exits": {
+      "s": "sanctum",
+      "e": "brook_ne"
+    },
+    "items": [
+      "mint",
+      "reed_cloak",
+      "grove_charm"
+    ],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "cellar_s",
+    "name": "Sunken Cellar",
+    "desc": "Damp stone, old crates, and a chill draft.",
+    "exits": {
+      "n": "sanctum",
+      "e": "thicket_se"
+    },
+    "items": [
+      "torch",
+      "rust_dagger"
+    ],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "court_w",
+    "name": "Ruined Courtyard",
+    "desc": "Broken statues and a dry fountain.",
+    "exits": {
+      "e": "sanctum"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "brook_ne",
+    "name": "Brook Crossing",
+    "desc": "A shallow brook babbles over smooth stones.",
+    "exits": {
+      "w": "grove_n"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "thicket_se",
+    "name": "Southern Thicket",
+    "desc": "Close-set shrubs tug at your sleeves.",
+    "exits": {
+      "w": "cellar_s"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "sanctum",
+    "name": "Sanctum",
+    "desc": "A quiet stone atrium with mossy pillars.",
+    "exits": {
+      "n": "grove_n",
+      "s": "cellar_s",
+      "w": "court_w",
+      "e": "gate"
+    },
+    "items": [
+      "rust_key"
+    ],
+    "npcs": [
+      "Caretaker"
+    ],
+    "tags": [
+      "safe_zone"
+    ]
+  },
+  {
+    "id": "gate",
+    "name": "East Gate",
+    "desc": "An iron gate bars the way east. A keyhole glints.",
+    "exits": {
+      "w": "sanctum",
+      "e": "path"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "path",
+    "name": "Forest Path",
+    "desc": "A winding path through whispering trees.",
+    "exits": {
+      "w": "gate",
+      "e": "wilds_stub"
+    },
+    "items": [
+      "apple"
+    ],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "wilds_stub",
+    "name": "Overgrown Verge",
+    "desc": "Tall grass hints at wilder lands to the east.",
+    "exits": {
+      "w": "path",
+      "e": "wilds",
+      "n": "wilds_tower"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": [
+      "part2_hook"
+    ]
+  },
+  {
+    "id": "wilds",
+    "name": "Whispering Wilds",
+    "desc": "The wild lands teem with danger and chance.",
+    "exits": {
+      "w": "wilds_stub",
+      "n": "wilds_lake",
+      "e": "wilds_mine",
+      "s": "wilds_camp"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "wilds_lake",
+    "name": "Moonlit Lake",
+    "desc": "A cold, glassy lake. Ripples reveal darting shapes.",
+    "exits": {
+      "s": "wilds"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "wilds_mine",
+    "name": "Abandoned Mine",
+    "desc": "Timbers groan above a vein of dull ore.",
+    "exits": {
+      "w": "wilds"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "wilds_camp",
+    "name": "Ranger Camp",
+    "desc": "A tidy camp with a banked fire and supple bows.",
+    "exits": {
+      "n": "wilds",
+      "e": "wilds_post"
+    },
+    "items": [],
+    "npcs": [
+      "Ranger"
+    ],
+    "tags": [
+      "safe_zone"
+    ]
+  },
+  {
+    "id": "wilds_hut",
+    "name": "Hermit's Hut",
+    "desc": "Bundles of herbs hang from the rafters.",
+    "exits": {
+      "e": "wilds_tower"
+    },
+    "items": [],
+    "npcs": [
+      "Hermit"
+    ],
+    "tags": [
+      "safe_zone"
+    ]
+  },
+  {
+    "id": "wilds_post",
+    "name": "Trader's Post",
+    "desc": "A makeshift counter piled with oddments.",
+    "exits": {
+      "w": "wilds_camp"
+    },
+    "items": [],
+    "npcs": [
+      "Trader"
+    ],
+    "tags": [
+      "safe_zone"
+    ]
+  },
+  {
+    "id": "wilds_tower",
+    "name": "Old Watchtower",
+    "desc": "Cracked stairs spiral into shadow; graffiti marks the stone.",
+    "exits": {
+      "s": "wilds_stub",
+      "e": "wilds",
+      "w": "wilds_hut"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": []
+  }
+]

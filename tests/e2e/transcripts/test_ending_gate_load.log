@@ -1,0 +1,21 @@
+Welcome to the Whispering Wilds. Type 'help' for commands.
+Sanctum
+A quiet stone atrium with mossy pillars.
+Items here: Rusty Key
+You see: Caretaker
+Exits: e, n, s, w
+> load
+load
+Game loaded.
+Old Watchtower
+Cracked stairs spiral into shadow; graffiti marks the stone.
+Exits: e, s, w
+> look
+look
+Old Watchtower
+Cracked stairs spiral into shadow; graffiti marks the stone.
+Exits: e, s, w
+> ascend
+ascend
+You have already restored the Whispering Wilds. The ending gate is open.
+> quit

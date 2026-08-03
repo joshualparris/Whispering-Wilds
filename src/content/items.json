@@ -1,0 +1,101 @@
+[
+  {
+    "id": "mint",
+    "name": "Wild Mint",
+    "desc": "Smells fresh.",
+    "usable": false,
+    "slot": null,
+    "atk": 0,
+    "df": 0
+  },
+  {
+    "id": "reed_cloak",
+    "name": "Reed Cloak",
+    "desc": "Woven from marsh reeds; warmer than it looks.",
+    "usable": false,
+    "slot": "armor",
+    "atk": 0,
+    "df": 1
+  },
+  {
+    "id": "grove_charm",
+    "name": "Grove Charm",
+    "desc": "A small talisman that steadies the hand.",
+    "usable": false,
+    "slot": "trinket",
+    "atk": 1,
+    "df": 1
+  },
+  {
+    "id": "torch",
+    "name": "Old Torch",
+    "desc": "Might still light.",
+    "usable": false,
+    "slot": null,
+    "atk": 0,
+    "df": 0
+  },
+  {
+    "id": "rust_dagger",
+    "name": "Rust Dagger",
+    "desc": "Pitted blade but still sharp.",
+    "usable": false,
+    "slot": "weapon",
+    "atk": 1,
+    "df": 0
+  },
+  {
+    "id": "rust_key",
+    "name": "Rusty Key",
+    "desc": "Old key with a jagged bite.",
+    "usable": true,
+    "slot": null,
+    "atk": 0,
+    "df": 0
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "desc": "A crisp, red apple.",
+    "usable": true,
+    "slot": null,
+    "atk": 0,
+    "df": 0
+  },
+  {
+    "id": "cooked_fish",
+    "name": "Cooked Fish",
+    "desc": "A hearty meal.",
+    "usable": true,
+    "slot": null,
+    "atk": 0,
+    "df": 0
+  },
+  {
+    "id": "glowcap_tonic",
+    "name": "Glowcap Tonic",
+    "desc": "A glowing liquid that cures poison.",
+    "usable": true,
+    "slot": null,
+    "atk": 0,
+    "df": 0
+  },
+  {
+    "id": "stove_pin",
+    "name": "Stove Pin",
+    "desc": "A sturdy metal pin.",
+    "usable": false,
+    "slot": null,
+    "atk": 0,
+    "df": 0
+  },
+  {
+    "id": "lost_ring",
+    "name": "Lost Ring",
+    "desc": "An old, tarnished ring.",
+    "usable": false,
+    "slot": "trinket",
+    "atk": 0,
+    "df": 0
+  }
+]

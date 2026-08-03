@@ -1,0 +1,73 @@
+Welcome to the Whispering Wilds. Type 'help' for commands.
+Sanctum
+A quiet stone atrium with mossy pillars.
+Items here: Rusty Key
+You see: Caretaker
+Exits: e, n, s, w
+> load
+load
+Game loaded.
+Sunken Cellar
+Damp stone, old crates, and a chill draft.
+Exits: e, n
+> look
+look
+Sunken Cellar
+Damp stone, old crates, and a chill draft.
+Exits: e, n
+> look
+look
+Sunken Cellar
+Damp stone, old crates, and a chill draft.
+Exits: e, n
+> n
+n
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+You bleed (-1 HP).
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+You bleed (-1 HP).
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> e
+e
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+You bleed (-1 HP).
+> look
+look
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> e
+e
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+You bleed (-1 HP).
+> quests
+quests
+Heal the Grove - active
+> inv
+inv
+Inventory: Rusty Key, Old Torch, Rust Dagger
+Equipped: weapon=Rust Dagger, armor=(empty), trinket=(empty)
+> quit

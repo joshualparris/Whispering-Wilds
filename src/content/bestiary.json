@@ -1,0 +1,73 @@
+{
+  "Whisper Wolf": {
+    "hp": [
+      2,
+      4
+    ],
+    "lore": "Once guardians of the grove...",
+    "tags": [
+      "bleed"
+    ]
+  },
+  "Bramble Wight": {
+    "hp": [
+      3,
+      5
+    ],
+    "lore": "A tangle of thorn...",
+    "tags": [
+      "bleed",
+      "armored"
+    ]
+  },
+  "Glimmer Moth": {
+    "hp": [
+      1,
+      2
+    ],
+    "lore": "Shy lights...",
+    "tags": [
+      "evasive"
+    ]
+  },
+  "Bog Shade": {
+    "hp": [
+      4,
+      6
+    ],
+    "lore": "A cold echo...",
+    "tags": [
+      "chill"
+    ]
+  },
+  "Fen Serpent": {
+    "hp": [
+      3,
+      5
+    ],
+    "lore": "A patient coil...",
+    "tags": [
+      "poison"
+    ]
+  },
+  "Stone Gnaw": {
+    "hp": [
+      2,
+      4
+    ],
+    "lore": "A pale burrower...",
+    "tags": [
+      "armored"
+    ]
+  },
+  "Camp Raider": {
+    "hp": [
+      3,
+      6
+    ],
+    "lore": "A desperate soul...",
+    "tags": [
+      "bleed"
+    ]
+  }
+}

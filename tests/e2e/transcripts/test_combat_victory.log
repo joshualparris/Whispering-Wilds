@@ -1,0 +1,264 @@
+Welcome to the Whispering Wilds. Type 'help' for commands.
+Sanctum
+A quiet stone atrium with mossy pillars.
+Items here: Rusty Key
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+Items here: Rusty Key
+You see: Caretaker
+Exits: e, n, s, w
+> take rust_key
+take rust_key
+You take the Rusty Key.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> use rust_key
+use rust_key
+The rusty key turns with a harsh scrape. The gate is unlocked.
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> w
+w
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> s
+s
+Sunken Cellar
+Damp stone, old crates, and a chill draft.
+Items here: Old Torch, Rust Dagger
+Exits: e, n
+> look
+look
+Sunken Cellar
+Damp stone, old crates, and a chill draft.
+Items here: Old Torch, Rust Dagger
+Exits: e, n
+> take rust_dagger
+take rust_dagger
+You take the Rust Dagger.
+A wild Glimmer Moth appears!
+> attack
+attack
+You strike the Glimmer Moth for 1 damage!
+The Glimmer Moth dissipates.
+Victory! (+1 XP, +1 gold)
+A wild Whisper Wolf appears!
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf glares at you.
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf strikes you (-1 HP).
+You are bleeding!
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+You bleed (-1 HP).
+The Whisper Wolf glares at you.
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf dissipates.
+Victory! (+1 XP, +1 gold)
+You bleed (-1 HP).
+> equip rust_dagger
+equip rust_dagger
+You equipped Rust Dagger.
+You bleed (-1 HP).
+> look
+look
+Sunken Cellar
+Damp stone, old crates, and a chill draft.
+Items here: Old Torch
+Exits: e, n
+> n
+n
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+You bleed (-1 HP).
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> n
+n
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+You bleed (-1 HP).
+> look
+look
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> hunt
+hunt
+You search the area for prey...
+A wild Camp Raider appears!
+You bleed (-1 HP).
+The Camp Raider glares at you.
+> flee
+flee
+You manage to flee!
+> hunt
+hunt
+You search the area for prey...
+A wild Bog Shade appears!
+You bleed (-1 HP).
+The Bog Shade strikes you (-1 HP).
+> flee
+flee
+You manage to flee!
+> hunt
+hunt
+You search the area for prey...
+A wild Whisper Wolf appears!
+You bleed (-1 HP).
+You collapse and awaken at the Sanctum.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> attack
+attack
+There is nothing to attack here.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> n
+n
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> look
+look
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> hunt
+hunt
+You search the area for prey...
+A wild Whisper Wolf appears!
+The Whisper Wolf glares at you.
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf glares at you.
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf glares at you.
+> attack
+attack
+You strike the Whisper Wolf for 1 damage!
+The Whisper Wolf dissipates.
+Victory! (+1 XP, +1 gold)
+A wild Glimmer Moth appears!
+> look
+look
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> quit

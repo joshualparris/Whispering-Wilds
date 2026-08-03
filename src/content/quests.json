@@ -1,0 +1,50 @@
+{
+  "heal_grove": {
+    "title": "Heal the Grove",
+    "need": {
+      "herb": 2
+    },
+    "reward": {
+      "gold": 3,
+      "xp": 1
+    },
+    "npc": "caretaker",
+    "room": "sanctum"
+  },
+  "angler_aid": {
+    "title": "Angler's Aid",
+    "need": {
+      "fish": 2
+    },
+    "reward": {
+      "gold": 5,
+      "xp": 1
+    },
+    "npc": "trader",
+    "room": "wilds_post"
+  },
+  "mine_matters": {
+    "title": "Mine Matters",
+    "need": {
+      "ore": 2
+    },
+    "reward": {
+      "gold": 4,
+      "xp": 1
+    },
+    "npc": "ranger",
+    "room": "wilds_camp"
+  },
+  "hermit_glow": {
+    "title": "Hermit's Glow",
+    "need": {
+      "glowcap": 3
+    },
+    "reward": {
+      "gold": 3,
+      "xp": 1
+    },
+    "npc": "hermit",
+    "room": "wilds_hut"
+  }
+}

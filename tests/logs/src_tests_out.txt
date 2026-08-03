@@ -1,0 +1,102 @@
+test_bestiary_undiscovered (test_engine.TestEngine.test_bestiary_undiscovered) ... ok
+test_combat_death (test_engine.TestEngine.test_combat_death) ... FAIL
+test_combat_resolution (test_engine.TestEngine.test_combat_resolution) ... ERROR
+test_cooked_fish_not_owned (test_engine.TestEngine.test_cooked_fish_not_owned) ... ok
+test_duplicate_items (test_engine.TestEngine.test_duplicate_items) ... ok
+test_equipment_cycle (test_engine.TestEngine.test_equipment_cycle) ... FAIL
+test_failed_movement_does_not_flee (test_engine.TestEngine.test_failed_movement_does_not_flee) ... FAIL
+test_hunting_in_safe_room (test_engine.TestEngine.test_hunting_in_safe_room) ... FAIL
+test_malformed_save (test_engine.TestEngine.test_malformed_save) ... ok
+test_movement_shorthand_encounter (test_engine.TestEngine.test_movement_shorthand_encounter) ... ok
+test_npc_dialogue_location (test_engine.TestEngine.test_npc_dialogue_location) ... FAIL
+test_save_load (test_engine.TestEngine.test_save_load) ... ok
+test_save_load_action (test_engine.TestEngine.test_save_load_action) ... ok
+
+======================================================================
+ERROR: test_combat_resolution (test_engine.TestEngine.test_combat_resolution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/josh/dev/Whispering-Wilds/src/tests/test_engine.py", line 92, in test_combat_resolution
+    self.game.state.active_encounter["hp"] = 1 # Easy kill
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+TypeError: 'NoneType' object does not support item assignment
+
+======================================================================
+FAIL: test_combat_death (test_engine.TestEngine.test_combat_death)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/josh/dev/Whispering-Wilds/src/tests/test_engine.py", line 116, in test_combat_death
+    self.assertIn("You collapse and awaken at the Sanctum.", self.game.output_buffer)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'You collapse and awaken at the Sanctum.' not found in ['There is nothing to attack here.']
+
+======================================================================
+FAIL: test_equipment_cycle (test_engine.TestEngine.test_equipment_cycle)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/josh/dev/Whispering-Wilds/src/tests/test_engine.py", line 82, in test_equipment_cycle
+    self.assertNotIn("rust_dagger", self.game.state.inventory)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'rust_dagger' unexpectedly found in ['rust_dagger']
+
+======================================================================
+FAIL: test_failed_movement_does_not_flee (test_engine.TestEngine.test_failed_movement_does_not_flee)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/josh/dev/Whispering-Wilds/src/tests/test_engine.py", line 26, in test_failed_movement_does_not_flee
+    self.assertIsNotNone(self.game.state.active_encounter)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_hunting_in_safe_room (test_engine.TestEngine.test_hunting_in_safe_room)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/josh/dev/Whispering-Wilds/src/tests/test_engine.py", line 44, in test_hunting_in_safe_room
+    self.assertIn("There is nothing to hunt here.", self.game.output_buffer)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'There is nothing to hunt here.' not found in ['There is no prey here.']
+
+======================================================================
+FAIL: test_npc_dialogue_location (test_engine.TestEngine.test_npc_dialogue_location)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/josh/dev/Whispering-Wilds/src/tests/test_engine.py", line 65, in test_npc_dialogue_location
+    self.assertIn("Caretaker: 'The grove is sick. Please, heal_grove.'", self.game.output_buffer)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: "Caretaker: 'The grove is sick. Please, heal_grove.'" not found in ['--- Talking to Caretaker ---', '1. Who are you?', '2. What is this place?', '3. Tell me about the Whispering Wilds.', '4. What threats lie beyond these walls?', '5. What can you tell me about the grove?', '6. Is there any work I can do?', '7. Goodbye.', "Type 'say <number>' to choose."]
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.033s
+
+FAILED (failures=5, errors=1)
+There is nothing to attack here.
+You don't have that.
+You eat the apple. Sweet and crisp.
+You equipped Rust Dagger.
+You can't go that way.
+There is no prey here.
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+--- Talking to Caretaker ---
+1. Who are you?
+2. What is this place?
+3. Tell me about the Whispering Wilds.
+4. What threats lie beyond these walls?
+5. What can you tell me about the grove?
+6. Is there any work I can do?
+7. Goodbye.
+Type 'say <number>' to choose.
+Game saved.
+Game loaded.
+Sanctum
+A quiet stone atrium with mossy pillars.
+Items here: Rusty Key
+You see: Caretaker
+Exits: e, n, s, w

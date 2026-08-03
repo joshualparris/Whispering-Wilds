@@ -1,0 +1,832 @@
+Welcome to the Whispering Wilds. Type 'help' for commands.
+Sanctum
+A quiet stone atrium with mossy pillars.
+Items here: Rusty Key
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+Items here: Rusty Key
+You see: Caretaker
+Exits: e, n, s, w
+> take rust_key
+take rust_key
+You take the Rusty Key.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> use rust_key
+use rust_key
+The rusty key turns with a harsh scrape. The gate is unlocked.
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> e
+e
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> look
+look
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> e
+e
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> n
+n
+Old Watchtower
+Cracked stairs spiral into shadow; graffiti marks the stone.
+Exits: e, s, w
+> look
+look
+Old Watchtower
+Cracked stairs spiral into shadow; graffiti marks the stone.
+Exits: e, s, w
+> ascend
+ascend
+The stairs are blocked by a magical seal. You need to complete more quests to break it.
+> look
+look
+Old Watchtower
+Cracked stairs spiral into shadow; graffiti marks the stone.
+Exits: e, s, w
+> s
+s
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> w
+w
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> look
+look
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> w
+w
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> w
+w
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> talk caretaker
+talk caretaker
+--- Talking to Caretaker ---
+1. Who are you?
+2. What is this place?
+3. Tell me about the Whispering Wilds.
+4. What threats lie beyond these walls?
+5. What can you tell me about the grove?
+6. Is there any work I can do?
+7. Goodbye.
+Type 'say <number>' to choose.
+> say 6
+say 6
+Caretaker: "The northern grove is sick, its leaves silvering with an unnatural rot. Bring me 2 herbs for a remedy, and I shall reward you."
+--- Talking to Caretaker ---
+1. I will heal the grove. (Accept Quest)
+2. Goodbye.
+Type 'say <number>' to choose.
+> say 1
+say 1
+Caretaker: "Thank you. Time is a luxury we no longer possess."
+Quest accepted: Heal the Grove
+--- Talking to Caretaker ---
+1. Remind me about the remedy.
+2. Where can I find herbs?
+3. Tell me more about the grove's illness.
+4. Goodbye.
+Type 'say <number>' to choose.
+> say 2
+say 2
+Caretaker: "You’ll find herbs where shade and damp linger—abandoned cellars, ancient tower footings, and beneath mossy stones that haven't seen the sun in centuries."
+--- Talking to Caretaker ---
+1. Remind me about the remedy.
+2. Where can I find herbs?
+3. Tell me more about the grove's illness.
+4. Goodbye.
+Type 'say <number>' to choose.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> n
+n
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> look
+look
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> forage
+forage
+You find 1 herb.
+> look
+look
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> forage
+forage
+You find 1 herb.
+> look
+look
+Northern Grove
+Silver-barked trees and soft leaf litter.
+Items here: Wild Mint, Reed Cloak, Grove Charm
+Exits: e, s
+> s
+s
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> talk caretaker
+talk caretaker
+--- Talking to Caretaker ---
+1. Remind me about the remedy.
+2. Where can I find herbs?
+3. Tell me more about the grove's illness.
+4. I have the herbs.
+5. Goodbye.
+Type 'say <number>' to choose.
+> say 4
+say 4
+Caretaker: "You have them? Good. If you are certain you wish to part with them, give them here."
+--- Talking to Caretaker ---
+1. Here are the herbs. (Turn in Quest)
+2. Goodbye.
+Type 'say <number>' to choose.
+> say 1
+say 1
+Caretaker: "The grove breathes easier. A heavy silence has lifted from the branches. You have my profound thanks, traveler."
+(+3 gold, +1 XP)
+--- Talking to Caretaker ---
+1. How fares the grove now?
+2. Do you have any other tasks?
+3. Tell me a story.
+4. Goodbye.
+Type 'say <number>' to choose.
+> look
+look
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
+> e
+e
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> look
+look
+East Gate
+An iron gate bars the way east. A keyhole glints.
+Exits: e, w
+> e
+e
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> look
+look
+Forest Path
+A winding path through whispering trees.
+Items here: Apple
+Exits: e, w
+> e
+e
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> e
+e
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> look
+look
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> s
+s
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> look
+look
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> e
+e
+Trader's Post
+A makeshift counter piled with oddments.
+You see: Trader
+Exits: w
+> look
+look
+Trader's Post
+A makeshift counter piled with oddments.
+You see: Trader
+Exits: w
+> talk trader
+talk trader
+--- Talking to Trader ---
+1. Who are you?
+2. Any work?
+3. Goodbye.
+Type 'say <number>' to choose.
+> say 2
+say 2
+Trader: "I need 2 fish."
+--- Talking to Trader ---
+1. I will do it. (Accept Angler's Aid)
+2. Goodbye.
+Type 'say <number>' to choose.
+> say 1
+say 1
+Trader: "Good. Hurry back."
+Quest accepted: Angler's Aid
+--- Talking to Trader ---
+1. What did you need again?
+2. Any tips?
+3. Goodbye.
+Type 'say <number>' to choose.
+> say 2
+say 2
+Trader: "The forest hides what it values most. Tread carefully, and look where shadows gather."
+--- Talking to Trader ---
+1. What did you need again?
+2. Any tips?
+3. Goodbye.
+Type 'say <number>' to choose.
+> look
+look
+Trader's Post
+A makeshift counter piled with oddments.
+You see: Trader
+Exits: w
+> w
+w
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> look
+look
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> n
+n
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> look
+look
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> n
+n
+Moonlit Lake
+A cold, glassy lake. Ripples reveal darting shapes.
+Exits: s
+> look
+look
+Moonlit Lake
+A cold, glassy lake. Ripples reveal darting shapes.
+Exits: s
+> fish
+fish
+The fish aren't biting.
+A wild Bog Shade appears!
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade strikes you (-1 HP).
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade glares at you.
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade strikes you (-2 HP).
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade dissipates.
+Victory! (+1 XP, +1 gold)
+> look
+look
+Moonlit Lake
+A cold, glassy lake. Ripples reveal darting shapes.
+Exits: s
+> fish
+fish
+You catch a fish.
+> look
+look
+Moonlit Lake
+A cold, glassy lake. Ripples reveal darting shapes.
+Exits: s
+> fish
+fish
+The fish aren't biting.
+A wild Bog Shade appears!
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade glares at you.
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade glares at you.
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade glares at you.
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade dissipates.
+Victory! (+1 XP, +1 gold)
+A wild Glimmer Moth appears!
+> attack
+attack
+You strike the Glimmer Moth for 1 damage!
+The Glimmer Moth glares at you.
+> attack
+attack
+You strike the Glimmer Moth for 1 damage!
+The Glimmer Moth dissipates.
+Victory! (+1 XP, +1 gold)
+> look
+look
+Moonlit Lake
+A cold, glassy lake. Ripples reveal darting shapes.
+Exits: s
+> fish
+fish
+The fish aren't biting.
+> look
+look
+Moonlit Lake
+A cold, glassy lake. Ripples reveal darting shapes.
+Exits: s
+> fish
+fish
+You catch a fish.
+> look
+look
+Moonlit Lake
+A cold, glassy lake. Ripples reveal darting shapes.
+Exits: s
+> s
+s
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> look
+look
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> s
+s
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> look
+look
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> e
+e
+Trader's Post
+A makeshift counter piled with oddments.
+You see: Trader
+Exits: w
+> look
+look
+Trader's Post
+A makeshift counter piled with oddments.
+You see: Trader
+Exits: w
+> talk trader
+talk trader
+--- Talking to Trader ---
+1. What did you need again?
+2. Any tips?
+3. I have the items.
+4. Goodbye.
+Type 'say <number>' to choose.
+> say 3
+say 3
+Trader: "Ah, you have it! Give it here."
+--- Talking to Trader ---
+1. Here are the items. (Turn in Quest)
+2. Goodbye.
+Type 'say <number>' to choose.
+> say 1
+say 1
+Trader: "Excellent. Here is your reward."
+(+5 gold, +1 XP)
+--- Talking to Trader ---
+1. How are things?
+2. Goodbye.
+Type 'say <number>' to choose.
+> look
+look
+Trader's Post
+A makeshift counter piled with oddments.
+You see: Trader
+Exits: w
+> w
+w
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> look
+look
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> talk ranger
+talk ranger
+--- Talking to Ranger ---
+1. Who are you?
+2. Any work?
+3. Goodbye.
+Type 'say <number>' to choose.
+> say 2
+say 2
+Ranger: "I need 2 ore."
+--- Talking to Ranger ---
+1. I will do it. (Accept Mine Matters)
+2. Goodbye.
+Type 'say <number>' to choose.
+> say 1
+say 1
+Ranger: "Good. Hurry back."
+Quest accepted: Mine Matters
+--- Talking to Ranger ---
+1. What did you need again?
+2. Any tips?
+3. Goodbye.
+Type 'say <number>' to choose.
+> say 2
+say 2
+Ranger: "The forest hides what it values most. Tread carefully, and look where shadows gather."
+--- Talking to Ranger ---
+1. What did you need again?
+2. Any tips?
+3. Goodbye.
+Type 'say <number>' to choose.
+> look
+look
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> n
+n
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> look
+look
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> e
+e
+Abandoned Mine
+Timbers groan above a vein of dull ore.
+Exits: w
+> look
+look
+Abandoned Mine
+Timbers groan above a vein of dull ore.
+Exits: w
+> mine
+mine
+You mine some ore.
+> look
+look
+Abandoned Mine
+Timbers groan above a vein of dull ore.
+Exits: w
+> mine
+mine
+You find nothing useful.
+> look
+look
+Abandoned Mine
+Timbers groan above a vein of dull ore.
+Exits: w
+> mine
+mine
+You mine a chunk of coal.
+> look
+look
+Abandoned Mine
+Timbers groan above a vein of dull ore.
+Exits: w
+> mine
+mine
+You mine some ore.
+> look
+look
+Abandoned Mine
+Timbers groan above a vein of dull ore.
+Exits: w
+> w
+w
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> look
+look
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> s
+s
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> look
+look
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> talk ranger
+talk ranger
+--- Talking to Ranger ---
+1. What did you need again?
+2. Any tips?
+3. I have the items.
+4. Goodbye.
+Type 'say <number>' to choose.
+> say 3
+say 3
+Ranger: "Ah, you have it! Give it here."
+--- Talking to Ranger ---
+1. Here are the items. (Turn in Quest)
+2. Goodbye.
+Type 'say <number>' to choose.
+> say 1
+say 1
+Ranger: "Excellent. Here is your reward."
+(+4 gold, +1 XP)
+--- Talking to Ranger ---
+1. How are things?
+2. Goodbye.
+Type 'say <number>' to choose.
+> look
+look
+Ranger Camp
+A tidy camp with a banked fire and supple bows.
+You see: Ranger
+Exits: e, n
+> n
+n
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> look
+look
+Whispering Wilds
+The wild lands teem with danger and chance.
+Exits: e, n, s, w
+> w
+w
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> look
+look
+Overgrown Verge
+Tall grass hints at wilder lands to the east.
+Exits: e, n, w
+> n
+n
+Old Watchtower
+Cracked stairs spiral into shadow; graffiti marks the stone.
+Exits: e, s, w
+> look
+look
+Old Watchtower
+Cracked stairs spiral into shadow; graffiti marks the stone.
+Exits: e, s, w
+> w
+w
+Hermit's Hut
+Bundles of herbs hang from the rafters.
+You see: Hermit
+Exits: e
+> look
+look
+Hermit's Hut
+Bundles of herbs hang from the rafters.
+You see: Hermit
+Exits: e
+> talk hermit
+talk hermit
+--- Talking to Hermit ---
+1. Who are you?
+2. Any work?
+3. Goodbye.
+Type 'say <number>' to choose.
+> say 2
+say 2
+Hermit: "I need 3 glowcap."
+--- Talking to Hermit ---
+1. I will do it. (Accept Hermit's Glow)
+2. Goodbye.
+Type 'say <number>' to choose.
+> say 1
+say 1
+Hermit: "Good. Hurry back."
+Quest accepted: Hermit's Glow
+--- Talking to Hermit ---
+1. What did you need again?
+2. Any tips?
+3. Goodbye.
+Type 'say <number>' to choose.
+> say 2
+say 2
+Hermit: "The forest hides what it values most. Tread carefully, and look where shadows gather."
+--- Talking to Hermit ---
+1. What did you need again?
+2. Any tips?
+3. Goodbye.
+Type 'say <number>' to choose.
+> look
+look
+Hermit's Hut
+Bundles of herbs hang from the rafters.
+You see: Hermit
+Exits: e
+> harvest
+harvest
+You harvested a glowcap.
+> look
+look
+Hermit's Hut
+Bundles of herbs hang from the rafters.
+You see: Hermit
+Exits: e
+> harvest
+harvest
+You harvest nothing.
+> look
+look
+Hermit's Hut
+Bundles of herbs hang from the rafters.
+You see: Hermit
+Exits: e
+> harvest
+harvest
+You harvested a glowcap.
+> look
+look
+Hermit's Hut
+Bundles of herbs hang from the rafters.
+You see: Hermit
+Exits: e
+> harvest
+harvest
+You harvested a glowcap.
+> talk hermit
+talk hermit
+--- Talking to Hermit ---
+1. What did you need again?
+2. Any tips?
+3. I have the items.
+4. Goodbye.
+Type 'say <number>' to choose.
+> say 3
+say 3
+Hermit: "Ah, you have it! Give it here."
+--- Talking to Hermit ---
+1. Here are the items. (Turn in Quest)
+2. Goodbye.
+Type 'say <number>' to choose.
+> say 1
+say 1
+Hermit: "Excellent. Here is your reward."
+(+3 gold, +1 XP)
+--- Talking to Hermit ---
+1. How are things?
+2. Goodbye.
+Type 'say <number>' to choose.
+> look
+look
+Hermit's Hut
+Bundles of herbs hang from the rafters.
+You see: Hermit
+Exits: e
+> e
+e
+Old Watchtower
+Cracked stairs spiral into shadow; graffiti marks the stone.
+Exits: e, s, w
+> look
+look
+Old Watchtower
+Cracked stairs spiral into shadow; graffiti marks the stone.
+Exits: e, s, w
+> ascend
+ascend
+GAME COMPLETED! You ascend the Watchtower, gazing out over a healed land.
+> save
+save
+Game saved.
+> quit

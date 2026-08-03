@@ -1,0 +1,11 @@
+test_ending_gate (test_01_ending_gate.TestEndingGate.test_ending_gate) ... ok
+test_quest_rejection (test_02_quest_rejection.TestQuestRejection.test_quest_rejection) ... ok
+test_combat_victory (test_03_combat_victory.TestCombatVictory.test_combat_victory) ... ok
+test_economy_and_crafting (test_04_economy_and_crafting.TestEconomyAndCrafting.test_economy_and_crafting) ... ok
+test_malformed_save (test_05_save_and_load.TestSaveAndLoad.test_malformed_save) ... ok
+test_save_and_load_fields (test_05_save_and_load.TestSaveAndLoad.test_save_and_load_fields) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 14.745s
+
+OK

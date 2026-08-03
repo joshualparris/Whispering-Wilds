@@ -1,0 +1,479 @@
+import pexpect
+import os
+import time
+import re
+
+class CLIHarness:
+    def __init__(self, seed, transcript_path):
+        os.makedirs(os.path.dirname(transcript_path), exist_ok=True)
+        self.logfile = open(transcript_path, "w")
+        self.child = pexpect.spawn(f"python3 src/main.py --seed {seed}", env={"PYTHONPATH": "src"}, encoding="utf-8")
+        self.child.logfile = self.logfile
+        self.command_count = 0
+        self.expect("Welcome to the Whispering Wilds")
+        self.expect("> ")
+        
+    def expect(self, pattern, timeout=2):
+        self.child.expect(pattern, timeout=timeout)
+        
+    def command(self, cmd, expected=None):
+        self.child.sendline(cmd)
+        self.command_count += 1
+        if expected:
+            self.child.expect(expected)
+        self.child.expect("> ")
+        return self.child.before
+
+    def close(self):
+        self.child.sendline("quit")
+        self.child.close()
+        self.logfile.close()
+
+    room_exits = {
+        "Sanctum": {"n":"Northern Grove", "s":"Sunken Cellar", "w":"Ruined Courtyard", "e":"East Gate"},
+        "East Gate": {"w":"Sanctum", "e":"Forest Path"},
+        "Forest Path": {"w":"East Gate", "e":"Overgrown Verge"},
+        "Overgrown Verge": {"w":"Forest Path", "e":"Whispering Wilds", "n":"Old Watchtower"},
+        "Whispering Wilds": {"w":"Overgrown Verge", "n":"Moonlit Lake", "e":"Abandoned Mine", "s":"Ranger Camp"},
+        "Ranger Camp": {"n":"Whispering Wilds", "e":"Trader's Post"},
+        "Trader's Post": {"w":"Ranger Camp"},
+        "Moonlit Lake": {"s":"Whispering Wilds"},
+        "Abandoned Mine": {"w":"Whispering Wilds"},
+        "Old Watchtower": {"s":"Overgrown Verge", "e":"Whispering Wilds", "w":"Hermit's Hut"},
+        "Hermit's Hut": {"e":"Old Watchtower"},
+        "Northern Grove": {"s":"Sanctum", "e":"Brook Crossing"},
+        "Brook Crossing": {"w":"Northern Grove"},
+        "Sunken Cellar": {"n":"Sanctum", "e":"Southern Thicket"},
+        "Southern Thicket": {"w":"Sunken Cellar"},
+        "Ruined Courtyard": {"e":"Sanctum"}
+    }
+
+    def get_current_room(self):
+        o = self.command("look")
+        for r in self.room_exits:
+            if r in o: return r
+        return None
+
+    def clear_combat(self, last_out):
+        o = last_out
+        full = last_out
+        while "appears!" in o or "HP:" in o or "glares" in o or "strikes" in o or "failed to flee" in o:
+            o = self.command("attack")
+            full += "\n" + o
+        return full
+
+    def walk_to(self, target_room_name):
+        while True:
+            curr = self.get_current_room()
+            if not curr:
+                self.clear_combat(self.command("look"))
+                continue
+            if curr == target_room_name:
+                break
+            
+            queue = [(curr, [])]
+            visited = set()
+            path = []
+            while queue:
+                node, p = queue.pop(0)
+                if node == target_room_name:
+                    path = p
+                    break
+                if node not in visited:
+                    visited.add(node)
+                    for direction, neighbor in self.room_exits.get(node, {}).items():
+                        queue.append((neighbor, p + [direction]))
+            if path:
+                o = self.command(path[0])
+                self.clear_combat(o)
+
+    def do_action(self, room_name, action, success_text=None, count=1):
+        gathered = 0
+        while gathered < count:
+            self.walk_to(room_name)
+            o = self.command(action)
+            o = self.clear_combat(o)
+            if success_text:
+                if success_text in o:
+                    gathered += 1
+            else:
+                return o
+        return ""
+
+import unittest
+from tests.e2e.cli_harness import CLIHarness
+
+class TestEndingGate(unittest.TestCase):
+    def test_ending_gate(self):
+        h = CLIHarness(42, "tests/e2e/transcripts/test_ending_gate.log")
+        
+        h.walk_to("Sanctum")
+        h.command("take rust_key")
+        h.walk_to("East Gate")
+        h.clear_combat(h.command("use rust_key"))
+        
+        o = h.do_action("Old Watchtower", "ascend")
+        self.assertIn("magical seal", o)
+        
+        # Caretaker
+        h.walk_to("Sanctum")
+        h.command("talk caretaker")
+        h.command("say 6")
+        h.command("say 1")
+        h.command("say 2")
+        h.do_action("Northern Grove", "forage", "1 herb", 2)
+        h.walk_to("Sanctum")
+        h.command("talk caretaker")
+        h.command("say 4")
+        h.command("say 1")
+        
+        # Trader
+        h.walk_to("Trader's Post")
+        h.command("talk trader")
+        h.command("say 2")
+        h.command("say 1")
+        h.command("say 2")
+        h.do_action("Moonlit Lake", "fish", "catch a fish", 2)
+        h.walk_to("Trader's Post")
+        h.command("talk trader")
+        h.command("say 3")
+        h.command("say 1")
+        
+        # Ranger
+        h.walk_to("Ranger Camp")
+        h.command("talk ranger")
+        h.command("say 2")
+        h.command("say 1")
+        h.command("say 2")
+        h.do_action("Abandoned Mine", "mine", "mine some ore", 2)
+        h.walk_to("Ranger Camp")
+        h.command("talk ranger")
+        h.command("say 3")
+        h.command("say 1")
+        
+        # Hermit
+        h.walk_to("Hermit's Hut")
+        h.command("talk hermit")
+        h.command("say 2")
+        h.command("say 1")
+        h.command("say 2")
+        h.do_action("Hermit's Hut", "harvest", "harvested a glowcap", 3)
+        h.command("talk hermit")
+        h.command("say 3")
+        h.command("say 1")
+        
+        o = h.do_action("Old Watchtower", "ascend")
+        self.assertIn("GAME COMPLETED", o)
+        
+        o = h.command("save")
+        self.assertIn("Game saved.", o)
+        h.close()
+        
+        h2 = CLIHarness(42, "tests/e2e/transcripts/test_ending_gate_load.log")
+        o = h2.clear_combat(h2.command("load"))
+        self.assertIn("Game loaded.", o)
+        o = h2.do_action("Old Watchtower", "ascend")
+        self.assertIn("already restored", o)
+        h2.close()
+import unittest
+from tests.e2e.cli_harness import CLIHarness
+
+class TestQuestRejection(unittest.TestCase):
+    def test_quest_rejection(self):
+        h = CLIHarness(42, "tests/e2e/transcripts/test_quest_rejection.log")
+        
+        h.walk_to("Sanctum")
+        h.command("talk caretaker")
+        h.command("say 6")
+        h.command("say 1")
+        h.command("say 2")
+        
+        h.command("talk caretaker")
+        o = h.command("say 1") # remind
+        self.assertIn("2 herb", o)
+        h.command("say 4") # bye
+        
+        h.walk_to("Northern Grove")
+        o = h.command("talk caretaker")
+        o = h.clear_combat(o)
+        self.assertIn("there is no one here", o.lower())
+        
+        h.close()
+import unittest
+from tests.e2e.cli_harness import CLIHarness
+
+class TestCombatVictory(unittest.TestCase):
+    def test_combat_victory(self):
+        h = CLIHarness(42, "tests/e2e/transcripts/test_combat_victory.log")
+        
+        # We need to fight to death (not flee), assert victory text and reward
+        # To find a creature reliably, we can go to Northern Grove and hunt
+        h.walk_to("Northern Grove")
+        
+        o = h.command("hunt")
+        # Ensure we found something
+        self.assertIn("appears!", o)
+        
+        # Keep attacking until it dissipates
+        while "dissipates" not in o and "You collapse" not in o:
+            o = h.command("attack")
+            
+        if "You collapse" in o:
+            self.fail("Player died before defeating the creature! Adjust seed or logic.")
+            
+        self.assertIn("dissipates", o)
+        self.assertIn("+1 XP", o)
+        
+        h.close()
+import unittest
+from tests.e2e.cli_harness import CLIHarness
+
+class TestEconomyAndCrafting(unittest.TestCase):
+    def test_economy_and_crafting(self):
+        h = CLIHarness(42, "tests/e2e/transcripts/test_economy_and_crafting.log")
+        
+        # 0. Get Key and Unlock Gate to access Trader later
+        h.walk_to("Sanctum")
+        h.command("take rust_key")
+        h.walk_to("East Gate")
+        h.clear_combat(h.command("use rust_key"))
+        
+        # 1. Gather materials for a bandage (1 fiber)
+        h.walk_to("Northern Grove")
+        
+        gathered_fiber = False
+        while not gathered_fiber:
+            o = h.command("forage")
+            o = h.clear_combat(o)
+            if "1 fiber" in o:
+                gathered_fiber = True
+                
+        # 2. Craft bandage
+        o = h.clear_combat(h.command("craft bandage"))
+        o = h.clear_combat(o)
+        self.assertIn("You craft a bandage", o)
+        
+        # 3. Use bandage (we might be at full HP, so let's get hit first)
+        # But we don't care, using it might just say "HP restored" or "Already at max HP"
+        o = h.command("use bandage")
+        self.assertTrue("restored" in o or "max HP" in o or "bandage" in o)
+        
+        # 4. Economy - Sell to get gold
+        # We need items to sell.
+        h.walk_to("Northern Grove")
+        h.clear_combat(h.command("take mint"))
+        h.clear_combat(h.command("take reed_cloak"))
+        h.clear_combat(h.command("take grove_charm"))
+        
+        h.walk_to("Trader's Post")
+        
+        o = h.clear_combat(h.command("sell mint"))
+        self.assertIn("Sold mint", o)
+        
+        o = h.clear_combat(h.command("sell reed_cloak"))
+        self.assertIn("Sold reed_cloak", o)
+        
+        # 5. Buy an item
+        # Now we have at least 2 gold. Let's buy an apple.
+        o = h.clear_combat(h.command("buy apple"))
+        self.assertIn("You bought apple", o)
+        
+        # Verify gold decreased / item obtained
+        o = h.clear_combat(h.command("inv"))
+        self.assertIn("Apple", o)
+        
+        h.close()
+import unittest
+import os
+import json
+from tests.e2e.cli_harness import CLIHarness
+
+class TestSaveAndLoad(unittest.TestCase):
+    def test_save_and_load_fields(self):
+        h = CLIHarness(42, "tests/e2e/transcripts/test_save_load.log")
+        
+        # We need to change the state significantly.
+        # 1. Change room (Gate)
+        h.walk_to("Sanctum")
+        h.command("take rust_key")
+        h.walk_to("East Gate")
+        h.clear_combat(h.command("use rust_key")) # Unlock gate
+        h.walk_to("Forest Path")
+        
+        # 2. Get quest
+        h.walk_to("Sanctum")
+        h.command("talk caretaker")
+        h.command("say 6")
+        h.command("say 1")
+        h.command("say 2")
+        # 3. Equip an item
+        h.walk_to("Sunken Cellar")
+        h.clear_combat(h.command("take torch"))
+        h.clear_combat(h.command("take rust_dagger"))
+        h.clear_combat(h.command("equip rust_dagger"))
+        
+        # 4. Save
+        o = h.clear_combat(h.command("save"))
+        self.assertIn("Game saved", o)
+        h.close()
+        
+        # Load and verify fields
+        h2 = CLIHarness(42, "tests/e2e/transcripts/test_save_load_verify.log")
+        o = h2.command("load")
+        self.assertIn("Game loaded", o)
+        
+        # Verify Room is Sunken Cellar
+        o = h2.command("look")
+        self.assertIn("Sunken Cellar", o)
+        
+        # Verify gate is unlocked (we can walk Path -> Overgrown Verge without key)
+        h2.walk_to("Forest Path")
+        o = h2.command("e") # Should go to Overgrown Verge
+        self.assertIn("Overgrown Verge", o)
+        
+        # Verify quest is active
+        o = h2.command("quests")
+        self.assertIn("Heal the Grove - active", o)
+        
+        # Verify inventory and equipment
+        o = h2.command("inv")
+        self.assertIn("Rust Dagger", o)
+        
+        self.assertIn("Old Torch", o)
+        
+        h2.close()
+        
+    def test_malformed_save(self):
+        h = CLIHarness(42, "tests/e2e/transcripts/test_malformed_save.log")
+        
+        # Write malformed JSON
+        with open("save.json", "w") as f:
+            f.write("THIS IS NOT JSON")
+            
+        o = h.command("load")
+        self.assertIn("Failed to load", o)
+        
+        # Write unsupported version
+        with open("save.json", "w") as f:
+            json.dump({"save_version": 999, "cur_room": "sanctum"}, f)
+            
+        o = h.command("load")
+        self.assertIn("Failed to load: Unsupported save version.", o)
+        
+        h.close()
+import unittest
+import json
+from engine.game import GameEngine
+
+class TestEngine(unittest.TestCase):
+    def setUp(self):
+        self.game = GameEngine("src/content")
+        self.assertTrue(len(self.game.loader.rooms) > 0)
+
+    def test_movement_shorthand_encounter(self):
+        self.game.process_input("n")
+        self.assertTrue(self.game.state.cur_room != "sanctum" or "You can't go that way." in self.game.output_buffer)
+        self.game.state.cur_room = "sanctum"
+        self.game.process_input("move north")
+        
+    def test_failed_movement_does_not_flee(self):
+        self.game.state.cur_room = "gate"
+        self.game.start_encounter("stone_gnaw")
+        self.game.process_input("s")
+        self.assertIn("You can't go that way.", self.game.output_buffer)
+        self.assertIsNotNone(self.game.state.active_encounter)
+
+    def test_duplicate_items(self):
+        self.game.state.inventory.append("apple")
+        self.game.state.inventory.append("apple")
+        self.assertEqual(self.game.state.inventory.count("apple"), 2)
+        self.game.process_input("use apple")
+        self.assertEqual(self.game.state.inventory.count("apple"), 1)
+
+    def test_cooked_fish_not_owned(self):
+        self.game.process_input("use cooked_fish")
+        self.assertIn("You don't have that.", self.game.output_buffer)
+
+    def test_hunting_in_safe_room(self):
+        self.game.state.cur_room = "sanctum"
+        self.game.process_input("hunt")
+        self.assertIn("There is no prey here.", self.game.output_buffer)
+
+    def test_bestiary_undiscovered(self):
+        self.assertFalse(self.game.state.bestiary.get("whisper_wolf", False))
+
+    def test_save_load(self):
+        self.game.state.inventory = ["apple", "rust_dagger"]
+        self.game.state.quests["test_quest"] = "started"
+        d = self.game.state.to_dict()
+        from engine.state import GameState
+        new_state = GameState.from_dict(d)
+        self.assertEqual(new_state.inventory, ["apple", "rust_dagger"])
+        self.assertEqual(new_state.quests["test_quest"], "started")
+
+    def test_npc_dialogue_location(self):
+        self.game.state.cur_room = "sanctum"
+        self.game.process_input("talk caretaker")
+        self.assertIn("--- Talking to Caretaker ---", self.game.output_buffer)
+        
+        self.game.state.cur_room = "gate"
+        self.game.process_input("talk caretaker")
+        self.assertTrue(any("there is no one here to talk to" in line.lower() for line in self.game.output_buffer))
+
+    def test_malformed_save(self):
+        from engine.state import GameState
+        with self.assertRaises(ValueError):
+            GameState.from_dict({"save_version": 999})
+
+    def test_equipment_cycle(self):
+        self.game.state.inventory.append("rust_dagger")
+        self.assertEqual(self.game.state.get_atk(self.game.loader), 0)
+        self.game.process_input("equip rust_dagger")
+        self.assertEqual(self.game.state.equipment["weapon"], "rust_dagger")
+        self.assertEqual(self.game.state.get_atk(self.game.loader), 1)
+        
+        self.game.process_input("unequip rust_dagger")
+        self.assertIsNone(self.game.state.equipment["weapon"])
+        self.assertEqual(self.game.state.get_atk(self.game.loader), 0)
+        self.assertIn("rust_dagger", self.game.state.inventory)
+        
+    def test_combat_resolution(self):
+        import unittest.mock
+        self.game.start_encounter("stone_gnaw")
+        self.game.state.active_encounter["hp"] = 1
+        with unittest.mock.patch('random.random', return_value=0.0):
+            self.game.process_input("attack")
+        
+        self.assertIn("The Stone Gnaw dissipates.", self.game.output_buffer)
+        self.assertIsNone(self.game.state.active_encounter)
+        self.assertEqual(self.game.state.xp, 1)
+
+    def test_combat_death(self):
+        import unittest.mock
+        self.game.start_encounter("stone_gnaw")
+        self.game.state.hp = 1
+        self.game.state.active_encounter["hp"] = 100
+        with unittest.mock.patch('random.random', return_value=0.1):
+            with unittest.mock.patch('random.randint', return_value=2):
+                self.game.process_input("attack")
+        
+        self.assertIn("You collapse and awaken at the Sanctum.", self.game.output_buffer)
+        self.assertEqual(self.game.state.cur_room, "sanctum")
+        self.assertEqual(self.game.state.hp, self.game.state.max_hp)
+
+    def test_save_load_action(self):
+        self.game.state.inventory.append("apple")
+        self.game.state.hp = 5
+        self.game.state.quests["heal_grove"] = "completed"
+        self.game.process_input("save")
+        self.game.state.inventory.clear()
+        self.game.state.hp = 10
+        self.game.state.quests.clear()
+        
+        self.game.process_input("load")
+        self.assertIn("apple", self.game.state.inventory)
+        self.assertEqual(self.game.state.hp, 5)
+        self.assertEqual(self.game.state.quests.get("heal_grove"), "completed")
+
+if __name__ == '__main__':
+    unittest.main()

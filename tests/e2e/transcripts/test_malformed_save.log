@@ -1,0 +1,13 @@
+Welcome to the Whispering Wilds. Type 'help' for commands.
+Sanctum
+A quiet stone atrium with mossy pillars.
+Items here: Rusty Key
+You see: Caretaker
+Exits: e, n, s, w
+> load
+load
+Failed to load: Expecting value: line 1 column 1 (char 0)
+> load
+load
+Failed to load: Unsupported save version.
+> quit

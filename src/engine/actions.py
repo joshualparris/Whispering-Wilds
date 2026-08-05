@@ -49,6 +49,7 @@ def move_action(ctx: ActionContext, args: list):
     # But tick will happen AFTER this action anyway. Let's set a flag to prevent immediate spawn.
     ctx.game.state.flags['just_fled'] = True
     
+    map_action(ctx, [])
     ctx.game.look()
 
 def flee_action(ctx: ActionContext, args: list):

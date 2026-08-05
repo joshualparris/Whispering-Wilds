@@ -22,6 +22,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  @  ?  ?  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: East Gate
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
@@ -40,6 +47,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  @  ?  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Forest Path
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
 A winding path through whispering trees.
 Items here: Apple
@@ -52,6 +66,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  ·  @  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Overgrown Verge
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w
@@ -299,6 +320,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  @  ·  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: East Gate
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
@@ -309,6 +337,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  @  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Forest Path
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
 A winding path through whispering trees.
 Items here: Apple
@@ -321,6 +356,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  ·  @  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Overgrown Verge
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w
@@ -582,6 +624,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  @  ·  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: East Gate
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
@@ -592,6 +641,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  @  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Forest Path
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
 A winding path through whispering trees.
 Items here: Apple
@@ -604,6 +660,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  ·  @  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Overgrown Verge
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w
@@ -663,6 +726,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  @  ·  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: East Gate
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
@@ -673,6 +743,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  @  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Forest Path
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
 A winding path through whispering trees.
 Items here: Apple
@@ -685,6 +762,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  ·  @  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Overgrown Verge
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w
@@ -801,6 +885,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  @  ·  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: East Gate
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
@@ -811,6 +902,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  @  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Forest Path
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
 A winding path through whispering trees.
 Items here: Apple
@@ -823,6 +921,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  ·  @  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Overgrown Verge
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w
@@ -993,6 +1098,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  @  ·  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: East Gate
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
@@ -1003,6 +1115,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  @  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Forest Path
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
 A winding path through whispering trees.
 Items here: Apple
@@ -1015,6 +1134,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  ·  @  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Overgrown Verge
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w
@@ -1145,6 +1271,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  @  ·  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: East Gate
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
@@ -1155,6 +1288,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  @  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Forest Path
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
 A winding path through whispering trees.
 Items here: Apple
@@ -1167,6 +1307,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  ·  @  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Overgrown Verge
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w
@@ -1427,6 +1574,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  @  ·  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: East Gate
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
@@ -1437,6 +1591,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  @  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Forest Path
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
 A winding path through whispering trees.
 Items here: Apple
@@ -1449,6 +1610,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  ·  @  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Overgrown Verge
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w
@@ -1837,6 +2005,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  @  ·  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: East Gate
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
@@ -1847,6 +2022,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  @  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Forest Path
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
 A winding path through whispering trees.
 Items here: Apple
@@ -1859,6 +2041,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  ·  @  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Overgrown Verge
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w
@@ -2101,6 +2290,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  @  ·  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: East Gate
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
@@ -2111,6 +2307,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  @  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Forest Path
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
 A winding path through whispering trees.
 Items here: Apple
@@ -2123,6 +2326,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  ·  @  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Overgrown Verge
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w
@@ -2521,6 +2731,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  @  ·  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: East Gate
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
@@ -2531,6 +2748,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  @  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Forest Path
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
 A winding path through whispering trees.
 Items here: Apple
@@ -2543,6 +2767,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  ·  @  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Overgrown Verge
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w
@@ -2737,6 +2968,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  @  ·  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: East Gate
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
@@ -2747,6 +2985,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  @  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Forest Path
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
 A winding path through whispering trees.
 Items here: Apple
@@ -2759,6 +3004,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  ·  @  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Overgrown Verge
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w
@@ -3085,6 +3337,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  @  ·  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: East Gate
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
@@ -3095,6 +3354,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  @  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Forest Path
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
 A winding path through whispering trees.
 Items here: Apple
@@ -3107,6 +3373,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  ·  @  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Overgrown Verge
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w
@@ -3301,6 +3574,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  @  ·  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: East Gate
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
@@ -3311,6 +3591,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  @  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Forest Path
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
 A winding path through whispering trees.
 Items here: Apple
@@ -3323,6 +3610,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  ·  @  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Overgrown Verge
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w
@@ -3525,6 +3819,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  @  ·  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: East Gate
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
@@ -3535,6 +3836,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  @  ·  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Forest Path
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
 A winding path through whispering trees.
 Items here: Apple
@@ -3547,6 +3855,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  ·  ·  ·  @  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Overgrown Verge
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w

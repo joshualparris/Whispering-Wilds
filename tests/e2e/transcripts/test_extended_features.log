@@ -30,8 +30,13 @@ help
 Available commands: move, look, take, drop, inv, stats, use, bandage, equip, unequip, hunt, attack, flee, rest, fish, mine, forage, harvest, craft, map, journal, note, erase, options hardmode, bestiary, lore, talk, save, load, quit
 > map
 map
-Visited rooms:
-- Sanctum
++---------------------+
+|    ?  ?     ?  ?    |
+| ?  @  ?  ?  ?  ?  ? |
+|    ?  ?     ?  ?  ? |
++---------------------+
+You are at: Sanctum
+Legend: @ you, · visited, ? known (unvisited), blank = off-map
 > stats
 stats
 HP: 10/10 | Gold: 0 | XP: 0

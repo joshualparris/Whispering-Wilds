@@ -16,7 +16,8 @@ class TestExtendedFeatures(unittest.TestCase):
         self.assertIn("look", o)
         
         o = h.command("map")
-        self.assertIn("- Sanctum", o)
+        self.assertIn("@", o)
+        self.assertIn("Sanctum", o)
         
         o = h.command("stats")
         self.assertIn("HP:", o)

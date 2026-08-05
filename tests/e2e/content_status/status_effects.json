@@ -1,0 +1,12 @@
+{
+  "poison": {
+    "id": "poison",
+    "name": "Poisoned",
+    "type": "debuff",
+    "duration": 3,
+    "damage_per_turn": 1,
+    "message_apply": "You have been poisoned!",
+    "message_tick": "Poison courses through your veins (-1 HP).",
+    "message_expire": "The poison runs its course."
+  }
+}

@@ -1,33 +1,68 @@
 import unittest
-from cli_harness import CLIHarness
+import pexpect
 
 class TestStatusEffectsE2E(unittest.TestCase):
     def test_status_effects_e2e(self):
-        h = CLIHarness(seed=123, transcript_path="tests/e2e/transcripts/test_status_effects.log")
-        h.command("n")
-        h.command("n")
+        # We spawn manually because CLIHarness hardcodes its room_exits graph which would break with our custom content
+        child = pexpect.spawn("python3 src/main.py --seed 42 --content tests/e2e/content_status", env={"PYTHONPATH": "src"}, encoding="utf-8")
+        child.expect("Welcome to the Whispering Wilds")
+        child.expect("> ")
         
-        # Keep hunting until we get poisoned or bleed
-        max_attempts = 10
-        got_status = False
-        for _ in range(max_attempts):
-            o = h.command("hunt")
-            if "appears!" in o:
-                # in combat, attack until victory or status applied
-                for _ in range(10):
-                    atk = h.command("attack")
-                    if "You are bleeding!" in atk or "You have been poisoned!" in atk or "You have been chilled!" in atk:
-                        got_status = True
-                    if "Victory!" in atk or "awaken at the Sanctum" in atk:
-                        break
-            if got_status:
+        # move to wilds
+        child.sendline("n")
+        child.expect("Wilds")
+        child.expect("> ")
+        
+        # hunt to spawn slime
+        child.sendline("hunt")
+        child.expect("A wild Poison Slime appears!")
+        child.expect("> ")
+        
+        # enemy attacks immediately after hunt since hunt consumes a turn!
+        # we don't know who goes first. Let's attack until poisoned.
+        poisoned = False
+        for _ in range(10):
+            child.sendline("attack")
+            child.expect("> ")
+            if "You have been poisoned!" in child.before:
+                poisoned = True
                 break
-                
-        # Now use stats to check status
-        o = h.command("stats")
-        self.assertTrue("bleed" in o or "poison" in o or "chill" in o or not got_status)
+            
+        self.assertTrue(poisoned, "Failed to get poisoned within 10 attacks")
         
-        # Then rest or tick to see it decay
-        h.command("rest")
+        # status ticks exactly once per action
+        child.sendline("look") # doesn't consume a turn
+        child.expect("Wilds")
+        child.expect("> ")
         
-        h.close()
+        # attack again -> consumes turn -> poison ticks
+        child.sendline("attack")
+        child.expect("Poison courses through your veins \\(-1 HP\\)")
+        child.expect("> ")
+        
+        # stats -> doesn't tick
+        child.sendline("stats")
+        child.expect("HP:")
+        child.expect("> ")
+        
+        # save / load shouldn't tick
+        child.sendline("save")
+        child.expect("Game saved.")
+        child.expect("> ")
+        
+        child.sendline("load")
+        child.expect("Game loaded.")
+        child.expect("> ")
+        
+        # wait out the poison
+        # duration is 3. We ticked once on the turn we got poisoned, once on second attack. So 1 turn left.
+        # let's flee
+        child.sendline("flee")
+        # might fail or succeed, but either way it consumes a turn
+        # wait, if we got poisoned during 'hunt' (before our first attack), then attack 1 ticked it, attack 2 ticked it.
+        # it might expire!
+        # let's check for expiration
+        child.expect("The poison runs its course.")
+        
+        child.sendline("quit")
+        child.close()

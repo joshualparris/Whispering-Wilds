@@ -1,0 +1,7 @@
+{
+  "Poison Slime": {
+    "hp": [10, 10],
+    "lore": "A slime that poisons you.",
+    "tags": ["poison"]
+  }
+}

@@ -7,13 +7,13 @@ from engine.game import GameEngine
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--seed", type=int, default=None)
+    parser.add_argument("--content", type=str, default="src/content")
     args = parser.parse_args()
     
     if args.seed is not None:
         random.seed(args.seed)
         
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    engine = GameEngine(content_dir=os.path.join(base_dir, "content"))
+    engine = GameEngine(content_dir=args.content)
     engine.say("Welcome to the Whispering Wilds. Type 'help' for commands.")
     engine.look()
     

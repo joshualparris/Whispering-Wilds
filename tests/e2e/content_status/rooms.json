@@ -1,0 +1,20 @@
+[
+  {
+    "id": "sanctum",
+    "name": "Sanctum",
+    "desc": "A quiet stone atrium.",
+    "exits": {"n": "wilds"},
+    "items": [],
+    "npcs": [],
+    "tags": ["safe_zone"]
+  },
+  {
+    "id": "wilds",
+    "name": "Wilds",
+    "desc": "A dangerous place.",
+    "exits": {"s": "sanctum"},
+    "items": [],
+    "npcs": [],
+    "tags": []
+  }
+]

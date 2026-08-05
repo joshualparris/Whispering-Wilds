@@ -58,13 +58,13 @@ class TestExtendedFeatures(unittest.TestCase):
         h.command("talk") # Single NPC trader
         h.command("say 3") # bye
         
-        h.do_action("Moonlit Lake", "fish", "fish", 1)
+        h.do_action("Moonlit Lake", "fish", "catch a fish", 1)
         h.walk_to("Ranger Camp")
         o = h.command("cook cooked_fish")
         self.assertTrue("You craft a cooked_fish" in o or "need 1 fish" in o)
         
         o = h.command("use cooked_fish")
-        self.assertTrue("You eat the cooked fish" in o or "max HP" in o or "don't have that" in o)
+        self.assertTrue("You eat the cooked fish" in o or "max HP" in o)
         
         # 7. lore
         o = h.command("lore stone")

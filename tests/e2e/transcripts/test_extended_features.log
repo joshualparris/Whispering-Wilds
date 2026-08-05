@@ -364,6 +364,14 @@ look
 Moonlit Lake
 A cold, glassy lake. Ripples reveal darting shapes.
 Exits: s
+> fish
+fish
+You catch a fish.
+> look
+look
+Moonlit Lake
+A cold, glassy lake. Ripples reveal darting shapes.
+Exits: s
 > s
 s
 Whispering Wilds
@@ -388,10 +396,10 @@ You see: Ranger
 Exits: e, n
 > cook cooked_fish
 cook cooked_fish
-You need 1 fish.
+You craft a cooked_fish.
 > use cooked_fish
 use cooked_fish
-You don't have that.
+You eat the cooked fish. It's hearty.
 > lore stone
 lore stone
 You haven't discovered that creature yet.

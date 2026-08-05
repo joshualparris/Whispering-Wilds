@@ -26,7 +26,6 @@ Sanctum
 A quiet stone atrium with mossy pillars.
 You see: Caretaker
 Exits: e, n, s, w
-You bleed (-1 HP).
 > look
 look
 Sanctum
@@ -38,7 +37,6 @@ e
 East Gate
 An iron gate bars the way east. A keyhole glints.
 Exits: e, w
-You bleed (-1 HP).
 > look
 look
 East Gate
@@ -50,7 +48,6 @@ Forest Path
 A winding path through whispering trees.
 Items here: Apple
 Exits: e, w
-You bleed (-1 HP).
 > look
 look
 Forest Path
@@ -62,7 +59,6 @@ e
 Overgrown Verge
 Tall grass hints at wilder lands to the east.
 Exits: e, n, w
-You bleed (-1 HP).
 > quests
 quests
 Heal the Grove - active

@@ -53,21 +53,46 @@ class GameEngine:
         self.say(f"A wild {enemy.name} appears!")
         self.state.bestiary[enemy_id] = True
 
+    def apply_status(self, eff_id: str):
+        eff = self.loader.status_effects.get(eff_id)
+        if not eff: return
+        
+        # Check immunity
+        if eff.immunity_armor and self.state.equipment.get("armor") == eff.immunity_armor:
+            return
+            
+        if eff_id not in self.state.status:
+            if eff.message_apply:
+                self.say(eff.message_apply)
+        
+        self.state.status[eff_id] = eff.duration
+
     def tick(self):
         # Handle status effects first
-        if "bleed" in self.state.status:
-            self.say("You bleed (-1 HP).")
-            self.state.hp -= 1
-        if "poison" in self.state.status:
-            self.say("Poison courses through your veins (-1 HP).")
-            self.state.hp -= 1
-        if "chill" in self.state.status:
-            # mitigated by reed cloak
-            if self.state.equipment.get("armor") == "reed_cloak":
-                pass
-            else:
-                self.say("You shiver from the chill (-1 HP).")
-                self.state.hp -= 1
+        expired = []
+        for eff_id in list(self.state.status.keys()):
+            eff = getattr(self.loader, "status_effects", {}).get(eff_id)
+            if not eff:
+                continue
+                
+            if eff.damage_per_turn > 0:
+                if eff.message_tick:
+                    self.say(eff.message_tick)
+                self.state.hp -= eff.damage_per_turn
+                
+            if eff.heal_per_turn > 0:
+                if eff.message_tick:
+                    self.say(eff.message_tick)
+                self.state.hp = min(self.state.hp + eff.heal_per_turn, self.state.max_hp)
+                
+            self.state.status[eff_id] -= 1
+            if self.state.status[eff_id] <= 0:
+                expired.append(eff_id)
+                if eff.message_expire:
+                    self.say(eff.message_expire)
+                    
+        for eff_id in expired:
+            self.state.status.pop(eff_id, None)
                 
         if self.state.hp <= 0 and not self.state.game_completed:
             self.say("You collapse and awaken at the Sanctum.")
@@ -92,14 +117,11 @@ class GameEngine:
                     self.say(f"The {foe['name']} strikes you (-{dmg} HP).")
                     
                     if "bleed" in foe["tags"] and random.random() < 0.3:
-                        self.state.status["bleed"] = 1
-                        self.say("You are bleeding!")
+                        self.apply_status("bleed")
                     if "poison" in foe["tags"] and random.random() < 0.3:
-                        self.state.status["poison"] = 1
-                        self.say("You have been poisoned!")
+                        self.apply_status("poison")
                     if "chill" in foe["tags"] and random.random() < 0.3:
-                        self.state.status["chill"] = 1
-                        self.say("You have been chilled!")
+                        self.apply_status("chill")
                         
                 if self.state.hp <= 0:
                     self.say("You collapse and awaken at the Sanctum.")

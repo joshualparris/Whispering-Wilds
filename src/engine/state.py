@@ -48,6 +48,10 @@ class GameState:
                 it = loader.get_item(it_id)
                 if it:
                     total += it.atk
+        for eff_id in self.status.keys():
+            eff = getattr(loader, "status_effects", {}).get(eff_id)
+            if eff:
+                total += eff.stat_mod_atk
         return total
 
     def get_def(self, loader) -> int:

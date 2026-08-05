@@ -167,10 +167,10 @@ You bleed (-1 HP).
 take rust_dagger
 You take the Rust Dagger.
 You bleed (-1 HP).
+Your bleeding stops.
 > equip rust_dagger
 equip rust_dagger
 You equipped Rust Dagger.
-You bleed (-1 HP).
 > save
 save
 Game saved.

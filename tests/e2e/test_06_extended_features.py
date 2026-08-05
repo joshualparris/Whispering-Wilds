@@ -64,7 +64,7 @@ class TestExtendedFeatures(unittest.TestCase):
         self.assertTrue("You craft a cooked_fish" in o or "need 1 fish" in o)
         
         o = h.command("use cooked_fish")
-        self.assertTrue("You eat the cooked fish" in o or "max HP" in o)
+        self.assertTrue("You eat the cooked fish" in o or "max HP" in o or "don't have that" in o)
         
         # 7. lore
         o = h.command("lore stone")

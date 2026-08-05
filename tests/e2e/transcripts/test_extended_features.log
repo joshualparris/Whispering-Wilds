@@ -138,6 +138,7 @@ You bleed (-1 HP).
 equip rust_dagger
 You equipped Rust Dagger.
 You bleed (-1 HP).
+Your bleeding stops.
 > look
 look
 Sunken Cellar
@@ -149,7 +150,6 @@ e
 Southern Thicket
 Close-set shrubs tug at your sleeves.
 Exits: w
-You bleed (-1 HP).
 > look
 look
 Southern Thicket
@@ -159,37 +159,74 @@ Exits: w
 hunt
 You search the area for prey...
 A wild Camp Raider appears!
-You bleed (-1 HP).
 The Camp Raider glares at you.
 > attack
 attack
 You strike the Camp Raider for 1 damage!
-You bleed (-1 HP).
 The Camp Raider glares at you.
 > attack
 attack
 You strike the Camp Raider for 1 damage!
-You bleed (-1 HP).
 The Camp Raider strikes you (-2 HP).
-You collapse and awaken at the Sanctum.
 > attack
 attack
-There is nothing to attack here.
-> hunt
-hunt
-There is no prey here.
-> hunt
-hunt
-There is no prey here.
-> hunt
-hunt
-There is no prey here.
-> hunt
-hunt
-There is no prey here.
+You strike the Camp Raider for 1 damage!
+The Camp Raider dissipates.
+Victory! (+1 XP, +1 gold)
+A wild Bog Shade appears!
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade glares at you.
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade glares at you.
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade glares at you.
+> attack
+attack
+You strike the Bog Shade for 1 damage!
+The Bog Shade dissipates.
+Victory! (+1 XP, +1 gold)
+A wild Glimmer Moth appears!
+> attack
+attack
+You strike the Glimmer Moth for 1 damage!
+The Glimmer Moth glares at you.
+> attack
+attack
+You strike the Glimmer Moth for 1 damage!
+The Glimmer Moth dissipates.
+Victory! (+1 XP, +1 gold)
 > rest
 rest
-You are already fully rested.
+It is not safe to rest here.
+> look
+look
+Southern Thicket
+Close-set shrubs tug at your sleeves.
+Exits: w
+> w
+w
+Sunken Cellar
+Damp stone, old crates, and a chill draft.
+Items here: Old Torch
+Exits: e, n
+> look
+look
+Sunken Cellar
+Damp stone, old crates, and a chill draft.
+Items here: Old Torch
+Exits: e, n
+> n
+n
+Sanctum
+A quiet stone atrium with mossy pillars.
+You see: Caretaker
+Exits: e, n, s, w
 > look
 look
 Sanctum
@@ -252,7 +289,7 @@ You see: Ranger
 Exits: e, n
 > camp
 camp
-You are already fully rested.
+You rest and recover some health.
 > look
 look
 Ranger Camp
@@ -321,90 +358,14 @@ A cold, glassy lake. Ripples reveal darting shapes.
 Exits: s
 > fish
 fish
-You catch a fish.
-A wild Camp Raider appears!
-> attack
-attack
-You strike the Camp Raider for 1 damage!
-The Camp Raider glares at you.
-> attack
-attack
-You strike the Camp Raider for 1 damage!
-The Camp Raider glares at you.
-> attack
-attack
-You strike the Camp Raider for 1 damage!
-The Camp Raider strikes you (-3 HP).
-> attack
-attack
-You strike the Camp Raider for 1 damage!
-The Camp Raider glares at you.
-> attack
-attack
-You strike the Camp Raider for 1 damage!
-The Camp Raider dissipates.
-Victory! (+1 XP, +1 gold)
-A wild Bramble Wight appears!
-> attack
-attack
-You strike the Bramble Wight for 1 damage!
-The Bramble Wight glares at you.
-> attack
-attack
-You strike the Bramble Wight for 1 damage!
-The Bramble Wight strikes you (-3 HP).
-> attack
-attack
-You strike the Bramble Wight for 1 damage!
-The Bramble Wight strikes you (-3 HP).
-You are bleeding!
-> attack
-attack
-You strike the Bramble Wight for 1 damage!
-The Bramble Wight dissipates.
-Victory! (+1 XP, +1 gold)
-You bleed (-1 HP).
-You collapse and awaken at the Sanctum.
+The fish aren't biting.
 > look
 look
-Sanctum
-A quiet stone atrium with mossy pillars.
-You see: Caretaker
-Exits: e, n, s, w
-> e
-e
-East Gate
-An iron gate bars the way east. A keyhole glints.
-Exits: e, w
-> look
-look
-East Gate
-An iron gate bars the way east. A keyhole glints.
-Exits: e, w
-> e
-e
-Forest Path
-A winding path through whispering trees.
-Items here: Apple
-Exits: e, w
-> look
-look
-Forest Path
-A winding path through whispering trees.
-Items here: Apple
-Exits: e, w
-> e
-e
-Overgrown Verge
-Tall grass hints at wilder lands to the east.
-Exits: e, n, w
-> look
-look
-Overgrown Verge
-Tall grass hints at wilder lands to the east.
-Exits: e, n, w
-> e
-e
+Moonlit Lake
+A cold, glassy lake. Ripples reveal darting shapes.
+Exits: s
+> s
+s
 Whispering Wilds
 The wild lands teem with danger and chance.
 Exits: e, n, s, w
@@ -427,10 +388,10 @@ You see: Ranger
 Exits: e, n
 > cook cooked_fish
 cook cooked_fish
-You craft a cooked_fish.
+You need 1 fish.
 > use cooked_fish
 use cooked_fish
-You eat the cooked fish. It's hearty.
+You don't have that.
 > lore stone
 lore stone
 You haven't discovered that creature yet.
@@ -476,6 +437,15 @@ Hermit's Hut
 Bundles of herbs hang from the rafters.
 You see: Hermit
 Exits: e
+> look
+look
+Hermit's Hut
+Bundles of herbs hang from the rafters.
+You see: Hermit
+Exits: e
+> harvest
+harvest
+You harvest nothing.
 > look
 look
 Hermit's Hut
@@ -551,52 +521,6 @@ Northern Grove
 Silver-barked trees and soft leaf litter.
 Items here: Wild Mint, Reed Cloak, Grove Charm
 Exits: e, s
-> look
-look
-Northern Grove
-Silver-barked trees and soft leaf litter.
-Items here: Wild Mint, Reed Cloak, Grove Charm
-Exits: e, s
-> forage
-forage
-You find 1 fiber.
-A wild Stone Gnaw appears!
-> attack
-attack
-You strike the Stone Gnaw for 1 damage!
-The Stone Gnaw strikes you (-3 HP).
-> attack
-attack
-You strike the Stone Gnaw for 1 damage!
-The Stone Gnaw dissipates.
-Victory! (+1 XP, +1 gold)
-> look
-look
-Northern Grove
-Silver-barked trees and soft leaf litter.
-Items here: Wild Mint, Reed Cloak, Grove Charm
-Exits: e, s
-> forage
-forage
-You find 1 fiber.
-> look
-look
-Northern Grove
-Silver-barked trees and soft leaf litter.
-Items here: Wild Mint, Reed Cloak, Grove Charm
-Exits: e, s
-> forage
-forage
-You find 1 fiber.
-> look
-look
-Northern Grove
-Silver-barked trees and soft leaf litter.
-Items here: Wild Mint, Reed Cloak, Grove Charm
-Exits: e, s
-> forage
-forage
-You find 1 fiber.
 > look
 look
 Northern Grove

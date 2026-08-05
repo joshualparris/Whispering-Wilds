@@ -1,0 +1,53 @@
+{
+  "bleed": {
+    "id": "bleed",
+    "name": "Bleeding",
+    "type": "debuff",
+    "duration": 3,
+    "damage_per_turn": 1,
+    "message_apply": "You are bleeding!",
+    "message_tick": "You bleed (-1 HP).",
+    "message_expire": "Your bleeding stops."
+  },
+  "poison": {
+    "id": "poison",
+    "name": "Poisoned",
+    "type": "debuff",
+    "duration": 5,
+    "damage_per_turn": 1,
+    "message_apply": "You have been poisoned!",
+    "message_tick": "Poison courses through your veins (-1 HP).",
+    "message_expire": "The poison runs its course."
+  },
+  "chill": {
+    "id": "chill",
+    "name": "Chilled",
+    "type": "debuff",
+    "duration": 4,
+    "damage_per_turn": 1,
+    "message_apply": "You have been chilled!",
+    "message_tick": "You shiver from the chill (-1 HP).",
+    "message_expire": "You feel warmer.",
+    "immunity_armor": "reed_cloak"
+  },
+  "regen": {
+    "id": "regen",
+    "name": "Regeneration",
+    "type": "buff",
+    "duration": 3,
+    "heal_per_turn": 1,
+    "message_apply": "You feel a restorative warmth.",
+    "message_tick": "Your wounds knit together (+1 HP).",
+    "message_expire": "The restorative warmth fades."
+  },
+  "weakness": {
+    "id": "weakness",
+    "name": "Weakness",
+    "type": "debuff",
+    "duration": 3,
+    "stat_mod_atk": -1,
+    "message_apply": "You feel weak.",
+    "message_tick": "",
+    "message_expire": "Your strength returns."
+  }
+}

@@ -96,6 +96,7 @@ You bleed (-1 HP).
 equip rust_dagger
 You equipped Rust Dagger.
 You bleed (-1 HP).
+Your bleeding stops.
 > look
 look
 Sunken Cellar
@@ -108,7 +109,6 @@ Sanctum
 A quiet stone atrium with mossy pillars.
 You see: Caretaker
 Exits: e, n, s, w
-You bleed (-1 HP).
 > look
 look
 Sanctum
@@ -121,7 +121,6 @@ Northern Grove
 Silver-barked trees and soft leaf litter.
 Items here: Wild Mint, Reed Cloak, Grove Charm
 Exits: e, s
-You bleed (-1 HP).
 > look
 look
 Northern Grove
@@ -132,7 +131,6 @@ Exits: e, s
 hunt
 You search the area for prey...
 A wild Camp Raider appears!
-You bleed (-1 HP).
 The Camp Raider glares at you.
 > flee
 flee
@@ -141,7 +139,6 @@ You manage to flee!
 hunt
 You search the area for prey...
 A wild Bog Shade appears!
-You bleed (-1 HP).
 The Bog Shade strikes you (-1 HP).
 > flee
 flee
@@ -150,97 +147,7 @@ You manage to flee!
 hunt
 You search the area for prey...
 A wild Whisper Wolf appears!
-You bleed (-1 HP).
-You collapse and awaken at the Sanctum.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> attack
-attack
-There is nothing to attack here.
-> look
-look
-Sanctum
-A quiet stone atrium with mossy pillars.
-You see: Caretaker
-Exits: e, n, s, w
-> look
-look
-Sanctum
-A quiet stone atrium with mossy pillars.
-You see: Caretaker
-Exits: e, n, s, w
-> n
-n
-Northern Grove
-Silver-barked trees and soft leaf litter.
-Items here: Wild Mint, Reed Cloak, Grove Charm
-Exits: e, s
-> look
-look
-Northern Grove
-Silver-barked trees and soft leaf litter.
-Items here: Wild Mint, Reed Cloak, Grove Charm
-Exits: e, s
-> hunt
-hunt
-You search the area for prey...
-A wild Whisper Wolf appears!
-The Whisper Wolf glares at you.
+The Whisper Wolf strikes you (-2 HP).
 > attack
 attack
 You strike the Whisper Wolf for 1 damage!

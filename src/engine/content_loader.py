@@ -15,6 +15,21 @@ class ItemDef:
     tags: List[str] = field(default_factory=list)
 
 @dataclass
+class StatusEffectDef:
+    id: str
+    name: str
+    type: str
+    duration: int
+    damage_per_turn: int = 0
+    heal_per_turn: int = 0
+    stat_mod_atk: int = 0
+    message_apply: str = ""
+    message_tick: str = ""
+    message_expire: str = ""
+    immunity_armor: Optional[str] = None
+
+
+@dataclass
 class RoomDef:
     id: str
     name: str
@@ -48,12 +63,14 @@ class ContentLoader:
         self.items: Dict[str, ItemDef] = {}
         self.bestiary: Dict[str, CreatureDef] = {}
         self.quests: Dict[str, QuestDef] = {}
+        self.status_effects: Dict[str, StatusEffectDef] = {}
         
     def load_all(self):
         self._load_items()
         self._load_rooms()
         self._load_bestiary()
         self._load_quests()
+        self._load_status_effects()
         self.validate_all()
         
     def _load_items(self):
@@ -114,6 +131,18 @@ class ContentLoader:
                     npc=val.get("npc", ""),
                     room=val.get("room", "")
                 )
+
+    def _load_status_effects(self):
+        status_path = self.content_dir / "status_effects.json"
+        if not status_path.exists():
+            return
+        with open(status_path, 'r') as f:
+            data = json.load(f)
+            for eff_id, val in data.items():
+                if eff_id in self.status_effects:
+                    raise ValueError(f"Duplicate status effect ID: {eff_id}")
+                self.status_effects[eff_id] = StatusEffectDef(**val)
+
 
     def validate_all(self):
         # 1. Check room exits and items

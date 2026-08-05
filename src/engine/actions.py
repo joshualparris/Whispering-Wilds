@@ -520,67 +520,9 @@ def craft_action(ctx: ActionContext, args: list):
         ctx.game.say("Unknown recipe.")
 
 def map_action(ctx: ActionContext, args: list):
-    pos = {
-        "sanctum": (0, 0),
-        "gate": (1, 0),
-        "path": (2, 0),
-        "wilds_stub": (3, 0),
-        "wilds": (4, 0),
-        "grove_n": (0, -1),
-        "brook_ne": (1, -1),
-        "cellar_s": (0, 1),
-        "thicket_se": (1, 1),
-        "court_w": (-1, 0),
-        "wilds_lake": (4, -1),
-        "wilds_mine": (5, 0),
-        "wilds_camp": (4, 1),
-        "wilds_post": (5, 1),
-        "wilds_tower": (3, -1),
-        "wilds_hut": (3, 1),
-        "overgrown_ruins": (-2, 0),
-        "hidden_grotto": (-2, -1),
-        "deep_woods": (4, -2),
-        "forgotten_shrine": (3, -2),
-        "crystal_cave": (6, 0),
-        "swamp_edge": (4, 2),
-        "murky_bog": (5, 2),
-        "troll_den": (6, 2),
-        "lake_island": (5, -1)
-    }
-
-    grid = {}
-    for rid, xy in pos.items():
-        grid.setdefault(tuple(xy), []).append(rid)
-
-    xs = [x for (x, y) in grid.keys()]
-    ys = [y for (x, y) in grid.keys()]
-    xmin, xmax = min(xs), max(xs)
-    ymin, ymax = min(ys), max(ys)
-
-    lines = []
-    cur_room_id = ctx.game.state.cur_room
-    for y in range(ymin, ymax + 1):
-        row = []
-        for x in range(xmin, xmax + 1):
-            rids = grid.get((x, y), [])
-            if not rids:
-                row.append("   ")
-                continue
-            
-            if cur_room_id in rids:
-                here_symbol = "@"
-            else:
-                seen_any = any(rid in ctx.game.state.visited_rooms for rid in rids)
-                here_symbol = "·" if seen_any else "?"
-
-            row.append(f" {here_symbol} ")
-        lines.append("".join(row))
-
-    border = "+" + "-" * (3 * (xmax - xmin + 1)) + "+"
-    ctx.game.say(border)
-    for line in lines:
-        ctx.game.say("|" + line + "|")
-    ctx.game.say(border)
+    map_str = ctx.game.get_map_string()
+    ctx.game.say(map_str)
+    
     room = ctx.game.get_cur_room()
     ctx.game.say(f"You are at: {room.name if room else 'Unknown'}")
     ctx.game.say("Legend: @ you, · visited, ? known (unvisited), blank = off-map")

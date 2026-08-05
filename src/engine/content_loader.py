@@ -38,6 +38,7 @@ class RoomDef:
     items: List[str] = field(default_factory=list)
     npcs: List[str] = field(default_factory=list)
     tags: List[str] = field(default_factory=list)
+    map_pos: List[int] = field(default_factory=list)
 
 @dataclass
 class CreatureDef:

@@ -13,7 +13,11 @@
       "grove_charm"
     ],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      0,
+      -1
+    ]
   },
   {
     "id": "cellar_s",
@@ -28,7 +32,11 @@
       "rust_dagger"
     ],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      0,
+      1
+    ]
   },
   {
     "id": "court_w",
@@ -40,7 +48,11 @@
     },
     "items": [],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      -1,
+      0
+    ]
   },
   {
     "id": "brook_ne",
@@ -51,7 +63,11 @@
     },
     "items": [],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      1,
+      -1
+    ]
   },
   {
     "id": "thicket_se",
@@ -62,7 +78,11 @@
     },
     "items": [],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      1,
+      1
+    ]
   },
   {
     "id": "sanctum",
@@ -82,6 +102,10 @@
     ],
     "tags": [
       "safe_zone"
+    ],
+    "map_pos": [
+      0,
+      0
     ]
   },
   {
@@ -94,7 +118,11 @@
     },
     "items": [],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      1,
+      0
+    ]
   },
   {
     "id": "path",
@@ -108,7 +136,11 @@
       "apple"
     ],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      2,
+      0
+    ]
   },
   {
     "id": "wilds_stub",
@@ -123,6 +155,10 @@
     "npcs": [],
     "tags": [
       "part2_hook"
+    ],
+    "map_pos": [
+      3,
+      0
     ]
   },
   {
@@ -137,7 +173,11 @@
     },
     "items": [],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      4,
+      0
+    ]
   },
   {
     "id": "wilds_lake",
@@ -150,7 +190,11 @@
     },
     "items": [],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      4,
+      -1
+    ]
   },
   {
     "id": "wilds_mine",
@@ -162,7 +206,11 @@
     },
     "items": [],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      5,
+      0
+    ]
   },
   {
     "id": "wilds_camp",
@@ -179,6 +227,10 @@
     ],
     "tags": [
       "safe_zone"
+    ],
+    "map_pos": [
+      4,
+      1
     ]
   },
   {
@@ -194,6 +246,10 @@
     ],
     "tags": [
       "safe_zone"
+    ],
+    "map_pos": [
+      3,
+      1
     ]
   },
   {
@@ -209,6 +265,10 @@
     ],
     "tags": [
       "safe_zone"
+    ],
+    "map_pos": [
+      5,
+      1
     ]
   },
   {
@@ -222,7 +282,11 @@
     },
     "items": [],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      3,
+      -1
+    ]
   },
   {
     "id": "overgrown_ruins",
@@ -234,7 +298,11 @@
     },
     "items": [],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      -2,
+      0
+    ]
   },
   {
     "id": "hidden_grotto",
@@ -247,6 +315,10 @@
     "npcs": [],
     "tags": [
       "safe_zone"
+    ],
+    "map_pos": [
+      -2,
+      -1
     ]
   },
   {
@@ -259,7 +331,11 @@
     },
     "items": [],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      4,
+      -2
+    ]
   },
   {
     "id": "forgotten_shrine",
@@ -272,6 +348,10 @@
     "npcs": [],
     "tags": [
       "safe_zone"
+    ],
+    "map_pos": [
+      3,
+      -2
     ]
   },
   {
@@ -283,7 +363,11 @@
     },
     "items": [],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      6,
+      0
+    ]
   },
   {
     "id": "swamp_edge",
@@ -295,7 +379,11 @@
     },
     "items": [],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      4,
+      2
+    ]
   },
   {
     "id": "murky_bog",
@@ -307,7 +395,11 @@
     },
     "items": [],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      5,
+      2
+    ]
   },
   {
     "id": "troll_den",
@@ -318,7 +410,11 @@
     },
     "items": [],
     "npcs": [],
-    "tags": []
+    "tags": [],
+    "map_pos": [
+      6,
+      2
+    ]
   },
   {
     "id": "lake_island",
@@ -331,6 +427,10 @@
     "npcs": [],
     "tags": [
       "safe_zone"
+    ],
+    "map_pos": [
+      5,
+      -1
     ]
   }
 ]

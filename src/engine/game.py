@@ -14,13 +14,15 @@ class GameEngine:
         register_all(self.registry)
         
         self.output_buffer = []
+        self.output_callback = print
 
     def get_cur_room(self):
         return self.loader.get_room(self.state.cur_room)
 
     def say(self, msg: str):
         self.output_buffer.append(msg)
-        print(msg) # CLI output
+        if self.output_callback:
+            self.output_callback(msg)
 
     def look(self):
         r = self.get_cur_room()
@@ -166,3 +168,89 @@ class GameEngine:
             
         self.registry.dispatch(self, text)
         return True
+
+    def get_map_string(self) -> str:
+        pos = {}
+        for r_id, r in self.loader.rooms.items():
+            if hasattr(r, 'map_pos') and r.map_pos:
+                pos[r_id] = tuple(r.map_pos)
+                
+        if not pos:
+            return "[Map] No layout yet."
+
+        grid = {}
+        for rid, xy in pos.items():
+            grid.setdefault(tuple(xy), []).append(rid)
+
+        xs = [x for (x, y) in grid.keys()]
+        ys = [y for (x, y) in grid.keys()]
+        xmin, xmax = min(xs), max(xs)
+        ymin, ymax = min(ys), max(ys)
+
+        lines = []
+        cur_room_id = self.state.cur_room
+        for y in range(ymin, ymax + 1):
+            row = []
+            for x in range(xmin, xmax + 1):
+                rids = grid.get((x, y), [])
+                if not rids:
+                    row.append("   ")
+                    continue
+                
+                if cur_room_id in rids:
+                    here_symbol = "@"
+                else:
+                    seen_any = any(rid in self.state.visited_rooms for rid in rids)
+                    here_symbol = "·" if seen_any else "?"
+
+                row.append(f" {here_symbol} ")
+            lines.append("".join(row))
+
+        return "\n".join(lines)
+
+    def get_snapshot(self):
+        r = self.get_cur_room()
+        
+        # Build inventory strings with counts if duplicates
+        counts = {}
+        for i_id in self.state.inventory:
+            it = self.loader.get_item(i_id)
+            if it:
+                counts[it.name] = counts.get(it.name, 0) + 1
+        
+        inv_list = []
+        for name, count in counts.items():
+            if count > 1:
+                inv_list.append(f"{name} ×{count}")
+            else:
+                inv_list.append(name)
+                
+        # Format statuses
+        statuses = []
+        for s_id, duration in self.state.status.items():
+            eff = self.loader.status_effects.get(s_id)
+            name = eff.name if eff else s_id.capitalize()
+            statuses.append(f"{name} ({duration})")
+            
+        # Add materials
+        for m_id, count in self.state.materials.items():
+            if count > 0:
+                inv_list.append(f"{m_id} ×{count}")
+                
+        if self.state.bandages > 0:
+            inv_list.append(f"Bandage ×{self.state.bandages}")
+            
+        return {
+            "room_name": r.name if r else "",
+            "hp": self.state.hp,
+            "max_hp": self.state.max_hp,
+            "gold": self.state.gold,
+            "xp": self.state.xp,
+            "atk": self.state.get_atk(self.loader),
+            "def": self.state.get_def(self.loader),
+            "equipment": self.state.equipment,
+            "inventory": inv_list,
+            "status": statuses,
+            "encounter": self.state.active_encounter,
+            "map_string": self.get_map_string()
+        }

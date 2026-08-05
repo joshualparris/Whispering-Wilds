@@ -91,9 +91,20 @@ class ContentLoader:
             return
         with open(rooms_path, 'r') as f:
             data = json.load(f)
+            seen_coords = set()
             for room_data in data:
                 if room_data["id"] in self.rooms:
                     raise ValueError(f"Duplicate room ID: {room_data['id']}")
+                    
+                pos = room_data.get("map_pos", [])
+                if pos:
+                    if len(pos) != 2 or not all(isinstance(x, (int, float)) for x in pos):
+                        raise ValueError(f"Room {room_data['id']} has invalid map_pos: {pos}")
+                    coord = tuple(pos)
+                    if coord in seen_coords:
+                        raise ValueError(f"Room {room_data['id']} has duplicate map_pos: {pos}")
+                    seen_coords.add(coord)
+                    
                 self.rooms[room_data["id"]] = RoomDef(**room_data)
 
     def _load_bestiary(self):

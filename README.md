@@ -6,8 +6,23 @@ A robust, data-driven text adventure game. Originally a simple prototype, the en
 
 ## Quick start
 
-To play the game, set the `PYTHONPATH` to `src` and run `main.py`:
+### 1. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
+### 2. Choose Your Interface
+**Whispering Wilds now features two interfaces.** Both use the exact same underlying game engine and share the same save data. You can save in the CLI and load your game in the TUI without losing progress.
+
+**Option A: The Textual TUI (Recommended)**
+A rich, split-pane dashboard with real-time stats and an interactive map.
+```bash
+PYTHONPATH=src python3 src/tui.py
+```
+*TUI Controls: Type commands into the input box or click the quick-action buttons with your mouse.*
+
+**Option B: The Classic CLI**
+The original text adventure experience.
 ```bash
 PYTHONPATH=src python3 src/main.py
 ```
@@ -72,6 +87,7 @@ quit
 
 **Requirements:**
 - Python 3.9+
+- `textual` (for the TUI)
 - `pexpect` (for the E2E test suite)
 
 **Running Tests:**
@@ -79,5 +95,5 @@ quit
 We provide a robust E2E test suite covering gameplay flows.
 
 ```bash
-PYTHONPATH=src python3 -m unittest discover -s tests/e2e
+PYTHONPATH=src python3 -m unittest discover -s tests -v
 ```

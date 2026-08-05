@@ -14,7 +14,7 @@ class GameEngine:
         register_all(self.registry)
         
         self.output_buffer = []
-        self.output_callback = print
+        self.output_callback = None
 
     def get_cur_room(self):
         return self.loader.get_room(self.state.cur_room)
@@ -23,6 +23,8 @@ class GameEngine:
         self.output_buffer.append(msg)
         if self.output_callback:
             self.output_callback(msg)
+        else:
+            print(msg) # CLI output
 
     def look(self):
         r = self.get_cur_room()
@@ -248,7 +250,7 @@ class GameEngine:
             "xp": self.state.xp,
             "atk": self.state.get_atk(self.loader),
             "def": self.state.get_def(self.loader),
-            "equipment": self.state.equipment,
+            "equipment": {k: self.loader.get_item(v).name if v and self.loader.get_item(v) else None for k, v in self.state.equipment.items()},
             "inventory": inv_list,
             "status": statuses,
             "encounter": self.state.active_encounter,

@@ -123,12 +123,9 @@ class GameApp(App):
         eq = snap['equipment']
         inv_text += "\n[b]Equipped[/b]\n"
         
-        def format_item(item):
-            return item.name if hasattr(item, 'name') else str(item) if item else 'none'
-            
-        inv_text += f"Weapon: {format_item(eq.get('weapon'))}\n"
-        inv_text += f"Armor:  {format_item(eq.get('armor'))}\n"
-        inv_text += f"Trinket: {format_item(eq.get('trinket'))}\n"
+        inv_text += f"Weapon: {eq.get('weapon') or 'none'}\n"
+        inv_text += f"Armor:  {eq.get('armor') or 'none'}\n"
+        inv_text += f"Trinket: {eq.get('trinket') or 'none'}\n"
         
         inv_widget.update(inv_text)
 

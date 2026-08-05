@@ -22,11 +22,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  @  ?  ?  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  @  ?  ?  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -47,11 +49,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  @  ?  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  @  ?  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -66,11 +70,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  ·  @  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  ·  @  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -320,11 +326,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  @  ·  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  @  ·  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -337,11 +345,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  @  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  @  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -356,11 +366,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  ·  @  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  ·  @  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -624,11 +636,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  @  ·  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  @  ·  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -641,11 +655,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  @  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  @  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -660,11 +676,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  ·  @  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  ·  @  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -726,11 +744,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  @  ·  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  @  ·  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -743,11 +763,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  @  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  @  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -762,11 +784,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  ·  @  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  ·  @  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -885,11 +909,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  @  ·  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  @  ·  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -902,11 +928,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  @  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  @  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -921,11 +949,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  ·  @  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  ·  @  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -1098,11 +1128,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  @  ·  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  @  ·  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -1115,11 +1147,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  @  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  @  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -1134,11 +1168,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  ·  @  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  ·  @  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -1271,11 +1307,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  @  ·  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  @  ·  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -1288,11 +1326,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  @  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  @  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -1307,11 +1347,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  ·  @  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  ·  @  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -1574,11 +1616,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  @  ·  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  @  ·  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -1591,11 +1635,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  @  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  @  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -1610,11 +1656,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  ·  @  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  ·  @  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -2005,11 +2053,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  @  ·  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  @  ·  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -2022,11 +2072,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  @  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  @  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -2041,11 +2093,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  ·  @  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  ·  @  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -2290,11 +2344,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  @  ·  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  @  ·  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -2307,11 +2363,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  @  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  @  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -2326,11 +2384,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  ·  @  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  ·  @  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -2731,11 +2791,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  @  ·  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  @  ·  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -2748,11 +2810,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  @  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  @  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -2767,11 +2831,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  ·  @  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  ·  @  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -2968,11 +3034,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  @  ·  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  @  ·  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -2985,11 +3053,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  @  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  @  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -3004,11 +3074,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  ·  @  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  ·  @  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -3337,11 +3409,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  @  ·  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  @  ·  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -3354,11 +3428,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  @  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  @  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -3373,11 +3449,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  ·  @  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  ·  @  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -3574,11 +3652,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  @  ·  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  @  ·  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -3591,11 +3671,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  @  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  @  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -3610,11 +3692,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  ·  @  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  ·  @  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -3819,11 +3903,13 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  @  ·  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  @  ·  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -3836,11 +3922,13 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  @  ·  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  @  ·  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -3855,11 +3943,13 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------+
-|    ?  ?     ?  ?    |
-| ?  ·  ·  ·  @  ?  ? |
-|    ?  ?     ?  ?  ? |
-+---------------------+
++---------------------------+
+|                ?  ?       |
+| ?     ?  ?     ?  ?  ?    |
+| ?  ?  ·  ·  ·  @  ?  ?  ? |
+|       ?  ?     ?  ?  ?    |
+|                   ?  ?  ? |
++---------------------------+
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge

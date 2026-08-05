@@ -536,7 +536,16 @@ def map_action(ctx: ActionContext, args: list):
         "wilds_camp": (4, 1),
         "wilds_post": (5, 1),
         "wilds_tower": (3, -1),
-        "wilds_hut": (3, 1)
+        "wilds_hut": (3, 1),
+        "overgrown_ruins": (-2, 0),
+        "hidden_grotto": (-2, -1),
+        "deep_woods": (4, -2),
+        "forgotten_shrine": (3, -2),
+        "crystal_cave": (6, 0),
+        "swamp_edge": (4, 2),
+        "murky_bog": (5, 2),
+        "troll_den": (6, 2),
+        "lake_island": (5, -1)
     }
 
     grid = {}

@@ -35,7 +35,8 @@
     "name": "Ruined Courtyard",
     "desc": "Broken statues and a dry fountain.",
     "exits": {
-      "e": "sanctum"
+      "e": "sanctum",
+      "w": "overgrown_ruins"
     },
     "items": [],
     "npcs": [],
@@ -143,7 +144,9 @@
     "name": "Moonlit Lake",
     "desc": "A cold, glassy lake. Ripples reveal darting shapes.",
     "exits": {
-      "s": "wilds"
+      "s": "wilds",
+      "n": "deep_woods",
+      "e": "lake_island"
     },
     "items": [],
     "npcs": [],
@@ -154,7 +157,8 @@
     "name": "Abandoned Mine",
     "desc": "Timbers groan above a vein of dull ore.",
     "exits": {
-      "w": "wilds"
+      "w": "wilds",
+      "e": "crystal_cave"
     },
     "items": [],
     "npcs": [],
@@ -166,7 +170,8 @@
     "desc": "A tidy camp with a banked fire and supple bows.",
     "exits": {
       "n": "wilds",
-      "e": "wilds_post"
+      "e": "wilds_post",
+      "s": "swamp_edge"
     },
     "items": [],
     "npcs": [
@@ -218,5 +223,114 @@
     "items": [],
     "npcs": [],
     "tags": []
+  },
+  {
+    "id": "overgrown_ruins",
+    "name": "Overgrown Ruins",
+    "desc": "Ancient stones reclaimed by the forest.",
+    "exits": {
+      "e": "court_w",
+      "n": "hidden_grotto"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "hidden_grotto",
+    "name": "Hidden Grotto",
+    "desc": "A secluded cave with glowing moss.",
+    "exits": {
+      "s": "overgrown_ruins"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": [
+      "safe_zone"
+    ]
+  },
+  {
+    "id": "deep_woods",
+    "name": "Deep Woods",
+    "desc": "The trees are so thick that little light penetrates.",
+    "exits": {
+      "s": "wilds_lake",
+      "w": "forgotten_shrine"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "forgotten_shrine",
+    "name": "Forgotten Shrine",
+    "desc": "An ancient altar to forgotten gods.",
+    "exits": {
+      "e": "deep_woods"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": [
+      "safe_zone"
+    ]
+  },
+  {
+    "id": "crystal_cave",
+    "name": "Crystal Cave",
+    "desc": "Glittering geodes line the walls of this cavern.",
+    "exits": {
+      "w": "wilds_mine"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "swamp_edge",
+    "name": "Swamp Edge",
+    "desc": "The ground turns soft and treacherous.",
+    "exits": {
+      "n": "wilds_camp",
+      "e": "murky_bog"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "murky_bog",
+    "name": "Murky Bog",
+    "desc": "Foul smelling gas rises from the stagnant water.",
+    "exits": {
+      "w": "swamp_edge",
+      "e": "troll_den"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "troll_den",
+    "name": "Troll Den",
+    "desc": "Large bones litter the ground in this smelly lair.",
+    "exits": {
+      "w": "murky_bog"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": []
+  },
+  {
+    "id": "lake_island",
+    "name": "Lake Island",
+    "desc": "A small peaceful island in the middle of the lake.",
+    "exits": {
+      "w": "wilds_lake"
+    },
+    "items": [],
+    "npcs": [],
+    "tags": [
+      "safe_zone"
+    ]
   }
 ]

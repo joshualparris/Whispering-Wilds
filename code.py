@@ -242,8 +242,7 @@ class Game:
         if d not in r.neighbors:
             self.say("You can't go that way.")
             return
-        if r.id == "gate" and d == "e" and not getattr(self, "gate_unlocked",
-                                                       False) and "rust_key" not in self.player.inv:
+        if r.id == "gate" and d == "e" and not getattr(self, "gate_unlocked", False):
             self.say("The gate is locked. A keyhole awaits a fitting key.")
             return
         self.cur_room = r.neighbors[d]
@@ -343,10 +342,14 @@ class Game:
 
     def drop(self, name: str) -> None:
         it = None
+        wanted = name.strip().lower()
         for k in list(self.player.inv.keys()):
-            if name.lower() in (k, self.player.inv[k].name.lower()):
+            id_l = k.lower()
+            nm_l = self.player.inv[k].name.lower()
+            if wanted == id_l or wanted == nm_l or (wanted and (wanted in id_l or wanted in nm_l)):
                 it = self.player.remove_item(k)
                 break
+
         if it:
             self.room().items.append(it)
             self.say(f"You drop the {it.name}.")
@@ -356,8 +359,11 @@ class Game:
     def use(self, name: str) -> None:
         inv = self.player.inv
         target = None
+        wanted = name.strip().lower()
         for it in inv.values():
-            if name.lower() in (it.id, it.name.lower()):
+            id_l = it.id.lower()
+            nm_l = it.name.lower()
+            if wanted == id_l or wanted == nm_l or (wanted and (wanted in id_l or wanted in nm_l)):
                 target = it
                 break
         if not target:
@@ -493,6 +499,33 @@ class Game:
             return True
         cmd, args = parts[0].lower(), parts[1:]
 
+        if cmd.isdigit():
+            args = [cmd] + args
+            cmd = "say"
+
+        # Pre-extension Aliases
+        if cmd == "inventory": cmd = "inv"
+        if cmd == "score": cmd = "stats"
+        if cmd == "brew":
+            cmd = "craft"
+            if not args: args = ["tonic"]
+        if cmd in ("stab", "hit", "punch", "kick", "slash", "slay", "kill", "strike", "shoot", "fire", "aim", "reload", "cast"):
+            cmd = "attack"
+        if cmd in ("wear", "don", "wield"): cmd = "equip"
+        if cmd in ("remove", "doff", "sheathe"): cmd = "unequip"
+        if cmd in ("sleep", "wait", "z", "sit", "stand", "kneel"): cmd = "rest"
+        if cmd == "exit" and args:
+            cmd = "move"
+        if cmd in ("trade", "barter", "haggle"): cmd = "buy"
+
+        if cmd == "talk" and not args and hasattr(self, "room"):
+            r_npcs = self.room().npcs
+            if len(r_npcs) == 1:
+                args = [r_npcs[0].lower()]
+            elif len(r_npcs) > 1:
+                self.say("Talk to who?")
+                return True
+
         ext = globals().get("ext_handle_command")
         if callable(ext):
             try:
@@ -501,27 +534,34 @@ class Game:
             except Exception as e:
                 self.say(f"[Extension ignored] {e}")
 
+        # Core Game Actions
         if cmd in ("quit", "exit", "q"):
             return False
+        if cmd in ("n", "s", "e", "w", "north", "south", "east", "west"):
+            self.move(cmd)
+            return True
         if cmd == "help":
             self.help()
             return True
-        if cmd == "look":
-            self.look()
+        if cmd in ("look", "l", "examine", "x"):
+            if args and cmd in ("examine", "x"):
+                self.say(f"You examine the {' '.join(args)}. It looks exactly as you'd expect.")
+            else:
+                self.look()
             return True
-        if cmd in ("move", "go"):
+        if cmd in ("move", "go", "run", "walk", "flee", "climb", "enter", "crawl", "swim", "fly", "ride", "mount", "dismount", "sneak", "hide", "follow", "chase"):
             if args:
                 self.move(args[0])
             else:
-                self.say("Use: move n/s/e/w")
+                self.say(f"Use: {cmd} n/s/e/w")
             return True
-        if cmd == "take":
+        if cmd in ("take", "get", "grab", "pickup"):
             self.take(" ".join(args))
             return True
-        if cmd == "drop":
+        if cmd in ("drop", "discard", "throw"):
             self.drop(" ".join(args))
             return True
-        if cmd == "use":
+        if cmd in ("use", "eat", "drink", "consume"):
             self.use(" ".join(args))
             return True
         if cmd == "equip":
@@ -543,6 +583,35 @@ class Game:
             self.stats()
             return True
 
+        # Flavor / Hints
+        if cmd in ("heal", "cure"):
+            self.say("To heal, you must 'use' an item, 'rest', or apply a 'bandage'.")
+            return True
+        if cmd in ("block", "parry", "dodge", "defend"):
+            self.say("You brace yourself for impact, though there is no immediate danger.")
+            return True
+        if cmd in ("open", "close", "unlock", "lock", "push", "pull", "break", "smash", "search", "dig", "build", "chop", "tie", "untie", "pour", "fill", "empty", "light", "extinguish", "insert", "put", "place"):
+            self.say("You fiddle with the environment, but nothing comes of it.")
+            return True
+        if cmd in ("touch", "smell", "taste", "listen"):
+            self.say("Your senses detect nothing unusual.")
+            return True
+        if cmd in ("wave", "kiss", "hug", "whisper", "bribe", "threaten", "insult", "sing", "pray", "worship", "read"):
+            self.say("You express yourself to the uncaring Wilds.")
+            return True
+        if cmd in ("jump", "leap"):
+            self.say("You jump up and down. Nothing happens, but you feel slightly more energetic.")
+            return True
+        if cmd in ("shout", "yell", "scream"):
+            self.say("You shout into the void. The echo answers, faintly mocking.")
+            return True
+        if cmd in ("dance", "jig"):
+            self.say("You bust a move. The Whispering Wilds are unimpressed.")
+            return True
+        if cmd in ("restart", "undo", "redo", "hint"):
+            self.say("Such meta-magic is not supported in this timeline.")
+            return True
+
         self.say("Unknown command. Try 'help'.")
         return True
 
@@ -552,7 +621,8 @@ class Game:
         while True:
             try:
                 line = input("> ")
-            except EOFError:
+            except (EOFError, KeyboardInterrupt):
+                self.say("\nExiting...")
                 break
             if not self.dispatch(line):
                 break
@@ -677,7 +747,7 @@ def _p3_forage(game):
     game.say(f"You forage and find 1 {found}.")
 
 def _p3_craft(game, what):
-    if not game or not hasattr(game, "_p3"): ...
+    if not game or not hasattr(game, "_p3"): return True
     what = (what or "").strip().lower()
 
     if what in ("bandage", "bandages"):
@@ -898,10 +968,32 @@ def _p4_option(game, key: str, value: str) -> None:
         return
     game.say(f"{key} set to {p4['options'][key]}")
 
+def _get_item_factory(iid: str):
+    items = {
+        "rust_key": Item("rust_key", "Rusty Key", "Old key with a jagged bite.", usable=True),
+        "apple": Item("apple", "Apple", "A crisp, red apple.", usable=True),
+        "dagger": Item("dagger", "Dagger", "A rusty dagger.", slot="weapon", atk=1),
+        "iron_sword": Item("iron_sword", "Iron Sword", "A sturdy iron sword.", slot="weapon", atk=2),
+        "wood_shield": Item("wood_shield", "Wooden Shield", "A crude wooden shield.", slot="armor", df=1),
+        "leather_jerkin": Item("leather_jerkin", "Leather Jerkin", "A thick leather jerkin.", slot="armor", df=2),
+        "copper_ring": Item("copper_ring", "Copper Ring", "A dull copper ring.", slot="trinket", df=1),
+        "wild_mint": Item("wild_mint", "Wild Mint", "Fragrant mint.", usable=False),
+        "reed_cloak": Item("reed_cloak", "Reed Cloak", "A woven cloak of reeds.", slot="armor", df=1),
+        "grove_charm": Item("grove_charm", "Grove Charm", "A small charm made of twigs.", slot="trinket", atk=1),
+        "glow_tonic": Item("glow_tonic", "Glowcap Tonic", "A luminescent potion.", usable=True),
+        "fish": Item("fish", "Fresh Fish", "A slippery, fresh-caught fish.", usable=False),
+        "cooked_fish": Item("cooked_fish", "Cooked Fish", "A hearty cooked fish.", usable=True),
+        "lost_ring": Item("lost_ring", "Lost Ring", "An old ring dredged from the depths.", usable=False),
+        "stove_pin": Item("stove_pin", "Stove Pin", "A metal pin.", usable=False),
+        "stove_pin_crafted": Item("stove_pin_crafted", "Repaired Stove Pin", "A shiny metal pin.", usable=False),
+    }
+    return items.get(iid, Item(iid, iid, "Recovered item."))
+
 def _p4_save(game) -> None:
     state = {
         "cur_room": getattr(game, "cur_room", None) if game else None,
         "inv": [it.id for it in getattr(getattr(game, "player", None), "inv", {}).values()] if game else [],
+        "eq": {k: getattr(v, "id", None) for k, v in getattr(getattr(game, "player", None), "equipment", {}).items() if v} if game else {},
         "hp": getattr(getattr(game, "player", None), "hp", None) if game else None,
         "max_hp": getattr(getattr(game, "player", None), "max_hp", None) if game else None,
     }
@@ -921,6 +1013,11 @@ def _p4_save(game) -> None:
             "journal": list(game._p4.get("journal", [])),
             "options": dict(game._p4.get("options", {})),
         }
+    if game and getattr(game, "_p5", None) is not None:
+        state["p5"] = {"seen": list(game._p5.get("seen", set()))}
+    if game and getattr(game, "_p6", None) is not None:
+        state["p6"] = {"quests": game._p6.get("quests", {})}
+
     payload = _p4_json.dumps(state, separators=(",", ":")).encode("utf-8")
     code = _p4_b64.b64encode(payload).decode("ascii")
     print("SAVE CODE:")
@@ -943,12 +1040,11 @@ def _p4_load(game, code: str) -> None:
     if "inv" in data:
         game.player.inv.clear()
         for iid in data["inv"]:
-            if iid == "rust_key":
-                game.player.add_item(Item("rust_key", "Rusty Key", "Old key with a jagged bite.", usable=True))
-            elif iid == "apple":
-                game.player.add_item(Item("apple", "Apple", "A crisp, red apple.", usable=True))
-            else:
-                game.player.add_item(Item(iid, iid, "Recovered item."))
+            game.player.add_item(_get_item_factory(iid))
+    if "eq" in data:
+        for slot, iid in data["eq"].items():
+            if hasattr(game.player, "equipment"):
+                game.player.equipment[slot] = _get_item_factory(iid)
     if getattr(game, "_p2", None) is not None and "p2" in data:
         if "xp" in data["p2"]:
             game._p2["xp"] = int(data["p2"]["xp"])
@@ -959,9 +1055,8 @@ def _p4_load(game, code: str) -> None:
             game._p3["gold"] = int(data["p3"]["gold"])
         if "mats" in data["p3"]:
             mats = data["p3"]["mats"]
-            for k in ("fiber", "herb"):
-                if k in mats:
-                    game._p3["mats"][k] = int(mats[k])
+            for k in mats:
+                game._p3["mats"][k] = int(mats[k])
         if "flags" in data["p3"]:
             game._p3["flags"] = dict(data["p3"]["flags"])
     if getattr(game, "_p4", None) is not None and "p4" in data:
@@ -969,6 +1064,12 @@ def _p4_load(game, code: str) -> None:
             game._p4["journal"] = list(data["p4"]["journal"])
         if "options" in data["p4"]:
             game._p4["options"] = dict(data["p4"]["options"])
+    if getattr(game, "_p5", None) is not None and "p5" in data:
+        if "seen" in data["p5"]:
+            game._p5["seen"] = set(data["p5"]["seen"])
+    if getattr(game, "_p6", None) is not None and "p6" in data:
+        if "quests" in data["p6"]:
+            game._p6["quests"] = dict(data["p6"]["quests"])
     print("Game loaded.")
 
 def p4_ext_handle_command(cmd, args, game):
@@ -1115,6 +1216,8 @@ def _p5_in_wilds(game):
         return False
     rid = getattr(r, "id", "")
     name = getattr(r, "name", "")
+    if rid in ("wilds_camp", "wilds_post", "wilds_hut"):
+        return False
     return (
         rid.startswith("wilds")
         or rid in ("wilds_stub", "wilds_e1", "wilds_e2")
@@ -1308,8 +1411,10 @@ def p5_ext_handle_command(cmd, args, game):
 
     # Intercept move to inject post-move encounter checks
     if cmd in ("move", "go"):
-        # Do the move using base Game
-        # If base not present, fall back to previous ext or fail silently
+        if getattr(game, "_p5", None) and game._p5["encounter"]:
+            game.say("You flee from the fight!")
+            _p5_end_encounter(game)
+        
         if game and hasattr(game, "move"):
             if args:
                 game.move(args[0])
@@ -1395,7 +1500,7 @@ def _p6_show_dialog(game, npc: str, options):
     game.say(f"{npc} listens. Choose:")
     for i, (text, _aid) in enumerate(options, 1):
         game.say(f"  {i}. {text}")
-    game.say("Say a number with: say [n]")
+    game.say("Type a number to reply:")
 
 def _p6_open_caretaker_dialog(game):
     q = game._p6["quests"]["heal_grove"]
@@ -1463,63 +1568,63 @@ def _p6_do_action(game, action_id: str):
     q = game._p6["quests"]["heal_grove"]
 
     if action_id == "ct_intro":
-        game.say('Caretaker: "A watcher of thresholds. I keep small fires lit."')
+        game.say('Caretaker: "I am but a watcher of thresholds, bound to the stones of the Sanctum. I sweep the dust of ages, keep the small fires lit, and wait for travelers like you to find their way."')
         return
 
     if action_id == "ct_place":
-        game.say('Caretaker: "These halls are called the Sanctum. The Wilds press close."')
+        game.say('Caretaker: "These halls are called the Sanctum. Built by hands that have long since returned to dust. It is a fragile island of stone amidst an ocean of root and thorn. The Wilds press close to our doors, ever hungry."')
         return
 
     if action_id == "ct_wilds":
-        game.say('Caretaker: "A tangle of old paths and newer fears. Rivers remember, trees forget."')
+        game.say('Caretaker: "A tangle of old paths, twisted trees, and newer fears. Time flows differently out there. Rivers remember the names of the drowned, but the trees... they forget. Tread carefully, for the forest watches."')
         return
 
     if action_id == "ct_threats":
-        game.say('Caretaker: "Wolves thin as mist, bramble-things with long memory, and shades that drink warmth."')
+        game.say('Caretaker: "Wolves thin as morning mist, bramble-things with long, cruel memory, and shades that drink warmth from your very breath. The deeper you go, the older the dark."')
         return
 
     if action_id == "ct_grove_lore":
-        game.say('Caretaker: "The northern grove was once tended. A blight nibbles its roots; a simple draught may help."')
+        game.say('Caretaker: "The northern grove was once tended by druids, long gone. Now a creeping blight nibbles its roots. A simple draught of herbs might restore the soil, but the Wilds are reluctant to yield their bounty."')
         return
 
     if action_id == "ct_offer_quest":
         q["state"] = "offered"
         _p6_journal_add(game, "Caretaker offered a task: Heal the Grove (bring 2 herbs).")
-        game.say('Caretaker: "The northern grove is sick. Bring me 2 herbs for a remedy."')
+        game.say('Caretaker: "The northern grove is sick, its leaves silvering with an unnatural rot. Bring me 2 herbs for a remedy, and I shall reward you."')
         game.say("Type: accept heal_grove   (or talk caretaker again for details)")
         return
 
     if action_id == "ct_remind":
         need = ", ".join(f"{v} {k}" for k, v in q["need"].items())
-        game.say(f'Caretaker: "Gather {need}. The grove north of here is fading."')
+        game.say(f'Caretaker: "Gather {need}. The grove north of here is fading, and time is a luxury we no longer possess."')
         return
 
     if action_id == "ct_herb_tips":
-        game.say('Caretaker: "You’ll find herbs where shade and damp linger—cellars, tower footings, and mossy stones."')
+        game.say('Caretaker: "You’ll find herbs where shade and damp linger—abandoned cellars, ancient tower footings, and beneath mossy stones that haven\'t seen the sun in centuries."')
         return
 
     if action_id == "ct_grove_sick":
-        game.say('Caretaker: "Leaves silver at the edges, sap gone thin. It is not death—just forgetting how to grow."')
+        game.say('Caretaker: "Leaves silver at the edges, sap gone thin and black. It is not true death—just a terrible forgetting of how to grow. The remedy will remind the roots of life."')
         return
 
     if action_id == "ct_turnin":
         if q["state"] != "completed":
-            game.say('Caretaker: "You seem unready yet."')
+            game.say('Caretaker: "You seem unready yet. Return when you have what is required."')
             return
-        game.say('Caretaker: "If you are certain, give them here."')
+        game.say('Caretaker: "You have them? Good. If you are certain you wish to part with them, give them here."')
         game.say("Use: turnin heal_grove")
         return
 
     if action_id == "ct_after":
-        game.say('Caretaker: "The grove breathes easier. Thank you."')
+        game.say('Caretaker: "The grove breathes easier. A heavy silence has lifted from the branches. You have my profound thanks, traveler."')
         return
 
     if action_id == "ct_more_work":
-        game.say('Caretaker: "Others in the Wilds will ask. A ranger needs ore; a trader, fish; a hermit, glowcaps."')
+        game.say('Caretaker: "Others wandering the Wilds will ask for aid. A stoic ranger needs ore; a weary trader seeks fish; a mad hermit whispers to glowcaps. Seek them out."')
         return
 
     if action_id == "ct_story":
-        game.say('Caretaker: "Once, a lantern moth led me home. Its dust remembered my name better than I did."')
+        game.say('Caretaker: "Once, when the moon was swallowed by the sky, a lantern moth led me back to these halls. Its dust remembered my name far better than I did myself. Some lights never truly go out."')
         return
 
     if action_id == "ct_bye":
@@ -1731,8 +1836,8 @@ def part7_post_init(game):
         tower.link("e", "wilds")
 
         # Link the Hermit's Hut off the tower
-        tower.link("s", "wilds_hut")
-        hut.link("n", "wilds_tower")
+        tower.link("w", "wilds_hut")
+        hut.link("e", "wilds_tower")
 
         # Trader off the camp
         camp.link("e", "wilds_post")
@@ -1778,18 +1883,21 @@ def part7_post_init(game):
     # ---------- Enrich the bestiary if Part 5 is present ----------
     if getattr(game, "_p5", None) is not None:
         best = game._p5.setdefault("bestiary", {})
-        best.setdefault("Fen Serpent", {
+        best["Fen Serpent"] = {
             "hp": (3, 5),
-            "lore": "A patient coil beneath still water. Its breath smells of bog."
-        })
-        best.setdefault("Stone Gnaw", {
+            "lore": "A patient coil beneath still water. Its breath smells of bog.",
+            "tags": {"poison"}
+        }
+        best["Stone Gnaw"] = {
             "hp": (2, 4),
-            "lore": "A pale burrower that chews ore for the iron taste."
-        })
-        best.setdefault("Camp Raider", {
+            "lore": "A pale burrower that chews ore for the iron taste.",
+            "tags": {"armored"}
+        }
+        best["Camp Raider"] = {
             "hp": (3, 6),
-            "lore": "A desperate soul with wild eyes, quick to flee."
-        })
+            "lore": "A desperate soul with wild eyes, quick to flee.",
+            "tags": {"bleed"}
+        }
         best.setdefault("Wild Ranger", {
             "hp": (3, 6),
             "lore": "A ranger with a long, worn mask. He is quick to flee."
@@ -1797,21 +1905,6 @@ def part7_post_init(game):
         best.setdefault("Wild Hermit", {
             "hp": (3, 6),
             "lore": "A hermit."
-        })
-        best.setdefault("Fen Serpent", {
-            "hp": (3, 5),
-            "lore": "A patient coil beneath still water. Its breath smells of bog.",
-            "tags": {"poison"}
-        })
-        best.setdefault("Stone Gnaw", {
-            "hp": (2, 4),
-            "lore": "A pale burrower that chews ore for the iron taste.",
-            "tags": {"armored"}
-        })
-        best.setdefault("Camp Raider", {
-            "hp": (3, 6),
-            "lore": "A desperate soul with wild eyes, quick to flee.",
-            "tags": {"bleed"}
         })
 
 # ---------- Local helpers ----------
@@ -2142,12 +2235,6 @@ def _p7_cmd_turnin(game, args) -> bool:
     game.say("You hand over the fish. The Trader pays in clinking coin.")
     return True
 
-#def _p7_cmd_fish(game, args) -> bool:
-#    """Wrapper for fishing at Moonlit Lake."""
- #   _p7_fish(game)
-#    return True
-
-# ---------- Fishing ----------
 # ---------- Fishing ----------
 def _p7_cmd_fish(game, args):
     # Must be at Moonlit Lake

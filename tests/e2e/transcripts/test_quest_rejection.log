@@ -77,13 +77,11 @@ You see: Caretaker
 Exits: e, n, s, w
 > n
 n
-+---------------------------+
-|                ?  ?       |
-| ?     @  ?     ?  ?  ?    |
-| ?  ?  ·  ?  ?  ?  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     @  ?     ?  ?  ?    
+ ?  ?  ·  ?  ?  ?  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: Northern Grove
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Northern Grove

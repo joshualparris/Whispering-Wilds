@@ -22,13 +22,11 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------------+
-|                ?  ?       |
-| ?     ?  ?     ?  ?  ?    |
-| ?  ?  ·  @  ?  ?  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ?  ?     ?  ?  ?    
+ ?  ?  ·  @  ?  ?  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -49,13 +47,11 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------------+
-|                ?  ?       |
-| ?     ?  ?     ?  ?  ?    |
-| ?  ?  ·  ·  @  ?  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ?  ?     ?  ?  ?    
+ ?  ?  ·  ·  @  ?  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -70,13 +66,11 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------------+
-|                ?  ?       |
-| ?     ?  ?     ?  ?  ?    |
-| ?  ?  ·  ·  ·  @  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ?  ?     ?  ?  ?    
+ ?  ?  ·  ·  ·  @  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -89,13 +83,11 @@ Tall grass hints at wilder lands to the east.
 Exits: e, n, w
 > n
 n
-+---------------------------+
-|                ?  ?       |
-| ?     ?  ?     @  ?  ?    |
-| ?  ?  ·  ·  ·  ·  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ?  ?     @  ?  ?    
+ ?  ?  ·  ·  ·  ·  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: Old Watchtower
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Old Watchtower
@@ -116,13 +108,11 @@ Cracked stairs spiral into shadow; graffiti marks the stone.
 Exits: e, s, w
 > s
 s
-+---------------------------+
-|                ?  ?       |
-| ?     ?  ?     ·  ?  ?    |
-| ?  ?  ·  ·  ·  @  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ?  ?     ·  ?  ?    
+ ?  ?  ·  ·  ·  @  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -135,13 +125,11 @@ Tall grass hints at wilder lands to the east.
 Exits: e, n, w
 > w
 w
-+---------------------------+
-|                ?  ?       |
-| ?     ?  ?     ·  ?  ?    |
-| ?  ?  ·  ·  @  ·  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ?  ?     ·  ?  ?    
+ ?  ?  ·  ·  @  ·  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -156,13 +144,11 @@ Items here: Apple
 Exits: e, w
 > w
 w
-+---------------------------+
-|                ?  ?       |
-| ?     ?  ?     ·  ?  ?    |
-| ?  ?  ·  @  ·  ·  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ?  ?     ·  ?  ?    
+ ?  ?  ·  @  ·  ·  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -175,13 +161,11 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > w
 w
-+---------------------------+
-|                ?  ?       |
-| ?     ?  ?     ·  ?  ?    |
-| ?  ?  @  ·  ·  ·  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ?  ?     ·  ?  ?    
+ ?  ?  @  ·  ·  ·  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: Sanctum
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Sanctum
@@ -239,13 +223,11 @@ You see: Caretaker
 Exits: e, n, s, w
 > n
 n
-+---------------------------+
-|                ?  ?       |
-| ?     @  ?     ·  ?  ?    |
-| ?  ?  ·  ·  ·  ·  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     @  ?     ·  ?  ?    
+ ?  ?  ·  ·  ·  ·  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: Northern Grove
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Northern Grove
@@ -278,13 +260,11 @@ Items here: Wild Mint, Reed Cloak, Grove Charm
 Exits: e, s
 > s
 s
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ?  ?    |
-| ?  ?  @  ·  ·  ·  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ?  ?    
+ ?  ?  @  ·  ·  ·  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: Sanctum
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Sanctum
@@ -331,13 +311,11 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ?  ?    |
-| ?  ?  ·  @  ·  ·  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ?  ?    
+ ?  ?  ·  @  ·  ·  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -350,13 +328,11 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ?  ?    |
-| ?  ?  ·  ·  @  ·  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ?  ?    
+ ?  ?  ·  ·  @  ·  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -371,13 +347,11 @@ Items here: Apple
 Exits: e, w
 > e
 e
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ?  ?    |
-| ?  ?  ·  ·  ·  @  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ?  ?    
+ ?  ?  ·  ·  ·  @  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -390,13 +364,11 @@ Tall grass hints at wilder lands to the east.
 Exits: e, n, w
 > e
 e
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ?  ?    |
-| ?  ?  ·  ·  ·  ·  @  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ?  ?    
+ ?  ?  ·  ·  ·  ·  @  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: Whispering Wilds
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Whispering Wilds
@@ -409,13 +381,11 @@ The wild lands teem with danger and chance.
 Exits: e, n, s, w
 > s
 s
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ?  ?    |
-| ?  ?  ·  ·  ·  ·  ·  ?  ? |
-|       ?  ?     ?  @  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ?  ?    
+ ?  ?  ·  ·  ·  ·  ·  ?  ? 
+       ?  ?     ?  @  ?    
+                   ?  ?  ? 
 You are at: Ranger Camp
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Ranger Camp
@@ -430,13 +400,11 @@ You see: Ranger
 Exits: e, n, s
 > e
 e
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ?  ?    |
-| ?  ?  ·  ·  ·  ·  ·  ?  ? |
-|       ?  ?     ?  ·  @    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ?  ?    
+ ?  ?  ·  ·  ·  ·  ·  ?  ? 
+       ?  ?     ?  ·  @    
+                   ?  ?  ? 
 You are at: Trader's Post
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Trader's Post
@@ -488,13 +456,11 @@ You see: Trader
 Exits: w
 > w
 w
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ?  ?    |
-| ?  ?  ·  ·  ·  ·  ·  ?  ? |
-|       ?  ?     ?  @  ·    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ?  ?    
+ ?  ?  ·  ·  ·  ·  ·  ?  ? 
+       ?  ?     ?  @  ·    
+                   ?  ?  ? 
 You are at: Ranger Camp
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Ranger Camp
@@ -509,13 +475,11 @@ You see: Ranger
 Exits: e, n, s
 > n
 n
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ?  ?    |
-| ?  ?  ·  ·  ·  ·  @  ?  ? |
-|       ?  ?     ?  ·  ·    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ?  ?    
+ ?  ?  ·  ·  ·  ·  @  ?  ? 
+       ?  ?     ?  ·  ·    
+                   ?  ?  ? 
 You are at: Whispering Wilds
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Whispering Wilds
@@ -528,13 +492,11 @@ The wild lands teem with danger and chance.
 Exits: e, n, s, w
 > n
 n
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  @  ?    |
-| ?  ?  ·  ·  ·  ·  ·  ?  ? |
-|       ?  ?     ?  ·  ·    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  @  ?    
+ ?  ?  ·  ·  ·  ·  ·  ?  ? 
+       ?  ?     ?  ·  ·    
+                   ?  ?  ? 
 You are at: Moonlit Lake
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Moonlit Lake
@@ -633,13 +595,11 @@ A cold, glassy lake. Ripples reveal darting shapes.
 Exits: e, n, s
 > s
 s
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ·  ?    |
-| ?  ?  ·  ·  ·  ·  @  ?  ? |
-|       ?  ?     ?  ·  ·    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ·  ?    
+ ?  ?  ·  ·  ·  ·  @  ?  ? 
+       ?  ?     ?  ·  ·    
+                   ?  ?  ? 
 You are at: Whispering Wilds
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Whispering Wilds
@@ -652,13 +612,11 @@ The wild lands teem with danger and chance.
 Exits: e, n, s, w
 > s
 s
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ·  ?    |
-| ?  ?  ·  ·  ·  ·  ·  ?  ? |
-|       ?  ?     ?  @  ·    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ·  ?    
+ ?  ?  ·  ·  ·  ·  ·  ?  ? 
+       ?  ?     ?  @  ·    
+                   ?  ?  ? 
 You are at: Ranger Camp
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Ranger Camp
@@ -673,13 +631,11 @@ You see: Ranger
 Exits: e, n, s
 > e
 e
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ·  ?    |
-| ?  ?  ·  ·  ·  ·  ·  ?  ? |
-|       ?  ?     ?  ·  @    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ·  ?    
+ ?  ?  ·  ·  ·  ·  ·  ?  ? 
+       ?  ?     ?  ·  @    
+                   ?  ?  ? 
 You are at: Trader's Post
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Trader's Post
@@ -723,13 +679,11 @@ You see: Trader
 Exits: w
 > w
 w
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ·  ?    |
-| ?  ?  ·  ·  ·  ·  ·  ?  ? |
-|       ?  ?     ?  @  ·    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ·  ?    
+ ?  ?  ·  ·  ·  ·  ·  ?  ? 
+       ?  ?     ?  @  ·    
+                   ?  ?  ? 
 You are at: Ranger Camp
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Ranger Camp
@@ -781,13 +735,11 @@ You see: Ranger
 Exits: e, n, s
 > n
 n
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ·  ?    |
-| ?  ?  ·  ·  ·  ·  @  ?  ? |
-|       ?  ?     ?  ·  ·    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ·  ?    
+ ?  ?  ·  ·  ·  ·  @  ?  ? 
+       ?  ?     ?  ·  ·    
+                   ?  ?  ? 
 You are at: Whispering Wilds
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Whispering Wilds
@@ -800,13 +752,11 @@ The wild lands teem with danger and chance.
 Exits: e, n, s, w
 > e
 e
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ·  ?    |
-| ?  ?  ·  ·  ·  ·  ·  @  ? |
-|       ?  ?     ?  ·  ·    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ·  ?    
+ ?  ?  ·  ·  ·  ·  ·  @  ? 
+       ?  ?     ?  ·  ·    
+                   ?  ?  ? 
 You are at: Abandoned Mine
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Abandoned Mine
@@ -851,13 +801,11 @@ Timbers groan above a vein of dull ore.
 Exits: e, w
 > w
 w
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ·  ?    |
-| ?  ?  ·  ·  ·  ·  @  ·  ? |
-|       ?  ?     ?  ·  ·    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ·  ?    
+ ?  ?  ·  ·  ·  ·  @  ·  ? 
+       ?  ?     ?  ·  ·    
+                   ?  ?  ? 
 You are at: Whispering Wilds
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Whispering Wilds
@@ -870,13 +818,11 @@ The wild lands teem with danger and chance.
 Exits: e, n, s, w
 > s
 s
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ·  ?    |
-| ?  ?  ·  ·  ·  ·  ·  ·  ? |
-|       ?  ?     ?  @  ·    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ·  ?    
+ ?  ?  ·  ·  ·  ·  ·  ·  ? 
+       ?  ?     ?  @  ·    
+                   ?  ?  ? 
 You are at: Ranger Camp
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Ranger Camp
@@ -920,13 +866,11 @@ You see: Ranger
 Exits: e, n, s
 > n
 n
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ·  ?    |
-| ?  ?  ·  ·  ·  ·  @  ·  ? |
-|       ?  ?     ?  ·  ·    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ·  ?    
+ ?  ?  ·  ·  ·  ·  @  ·  ? 
+       ?  ?     ?  ·  ·    
+                   ?  ?  ? 
 You are at: Whispering Wilds
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Whispering Wilds
@@ -939,13 +883,11 @@ The wild lands teem with danger and chance.
 Exits: e, n, s, w
 > w
 w
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ·  ?    |
-| ?  ?  ·  ·  ·  @  ·  ·  ? |
-|       ?  ?     ?  ·  ·    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ·  ?    
+ ?  ?  ·  ·  ·  @  ·  ·  ? 
+       ?  ?     ?  ·  ·    
+                   ?  ?  ? 
 You are at: Overgrown Verge
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Overgrown Verge
@@ -958,13 +900,11 @@ Tall grass hints at wilder lands to the east.
 Exits: e, n, w
 > n
 n
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     @  ·  ?    |
-| ?  ?  ·  ·  ·  ·  ·  ·  ? |
-|       ?  ?     ?  ·  ·    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     @  ·  ?    
+ ?  ?  ·  ·  ·  ·  ·  ·  ? 
+       ?  ?     ?  ·  ·    
+                   ?  ?  ? 
 You are at: Old Watchtower
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Old Watchtower
@@ -977,13 +917,11 @@ Cracked stairs spiral into shadow; graffiti marks the stone.
 Exits: e, s, w
 > w
 w
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     ·  ·  ?    |
-| ?  ?  ·  ·  ·  ·  ·  ·  ? |
-|       ?  ?     @  ·  ·    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     ·  ·  ?    
+ ?  ?  ·  ·  ·  ·  ·  ·  ? 
+       ?  ?     @  ·  ·    
+                   ?  ?  ? 
 You are at: Hermit's Hut
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Hermit's Hut
@@ -1094,13 +1032,11 @@ You see: Hermit
 Exits: e
 > e
 e
-+---------------------------+
-|                ?  ?       |
-| ?     ·  ?     @  ·  ?    |
-| ?  ?  ·  ·  ·  ·  ·  ·  ? |
-|       ?  ?     ·  ·  ·    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ·  ?     @  ·  ?    
+ ?  ?  ·  ·  ·  ·  ·  ·  ? 
+       ?  ?     ·  ·  ·    
+                   ?  ?  ? 
 You are at: Old Watchtower
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Old Watchtower

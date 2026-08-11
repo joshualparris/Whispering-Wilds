@@ -22,13 +22,11 @@ You see: Caretaker
 Exits: e, n, s, w
 > e
 e
-+---------------------------+
-|                ?  ?       |
-| ?     ?  ?     ?  ?  ?    |
-| ?  ?  ·  @  ?  ?  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ?  ?     ?  ?  ?    
+ ?  ?  ·  @  ?  ?  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -49,13 +47,11 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > e
 e
-+---------------------------+
-|                ?  ?       |
-| ?     ?  ?     ?  ?  ?    |
-| ?  ?  ·  ·  @  ?  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ?  ?     ?  ?  ?    
+ ?  ?  ·  ·  @  ?  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: Forest Path
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Forest Path
@@ -76,13 +72,11 @@ Items here: Apple
 Exits: e, w
 > w
 w
-+---------------------------+
-|                ?  ?       |
-| ?     ?  ?     ?  ?  ?    |
-| ?  ?  ·  @  ·  ?  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ?  ?     ?  ?  ?    
+ ?  ?  ·  @  ·  ?  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: East Gate
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 East Gate
@@ -95,13 +89,11 @@ An iron gate bars the way east. A keyhole glints.
 Exits: e, w
 > w
 w
-+---------------------------+
-|                ?  ?       |
-| ?     ?  ?     ?  ?  ?    |
-| ?  ?  @  ·  ·  ?  ?  ?  ? |
-|       ?  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ?  ?     ?  ?  ?    
+ ?  ?  @  ·  ·  ?  ?  ?  ? 
+       ?  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: Sanctum
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Sanctum
@@ -159,13 +151,11 @@ You see: Caretaker
 Exits: e, n, s, w
 > s
 s
-+---------------------------+
-|                ?  ?       |
-| ?     ?  ?     ?  ?  ?    |
-| ?  ?  ·  ·  ·  ?  ?  ?  ? |
-|       @  ?     ?  ?  ?    |
-|                   ?  ?  ? |
-+---------------------------+
+                ?  ?       
+ ?     ?  ?     ?  ?  ?    
+ ?  ?  ·  ·  ·  ?  ?  ?  ? 
+       @  ?     ?  ?  ?    
+                   ?  ?  ? 
 You are at: Sunken Cellar
 Legend: @ you, · visited, ? known (unvisited), blank = off-map
 Sunken Cellar

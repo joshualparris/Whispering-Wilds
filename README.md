@@ -9,7 +9,7 @@ A single-file Python game you can read, run, and mod in one sitting. Seven “pa
 ## Quick start
 
 ```bash
-python3 game.py
+python3 code.py
 ```
 
 In game, try:

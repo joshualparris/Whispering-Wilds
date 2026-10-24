@@ -1,3 +1,5 @@
+> **Conditional-only task:** `WW-PY-030` is NOT next. Follow the [Python game task triage](TASK_TRIAGE.md) instead; no browser UI has been added to this repo.
+
 # Podcast Integration TODO
 
 **Decision:** Do not add a web podcast dock to this repository.  

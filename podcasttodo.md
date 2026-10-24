@@ -9,4 +9,4 @@ The repository contains a single-file Python text adventure (`code.py`) and no b
 - [x] Confirm whether this is an active web/game copy — it is CLI-only.
 - [x] Avoid adding irrelevant browser/Spotify code to the Python game.
 - [x] Implement the podcast experience in the maintained browser game instead (`WhirringWilderness`).
-- [ ] If this Python game later gets a browser front end, reuse JoshHub's shared `dnd`/fantasy catalogue and universal dock rather than duplicating episode data.
+- [ ] **WW-PY-030** If this Python game later gets a browser front end, reuse JoshHub's shared `dnd`/fantasy catalogue and universal dock rather than duplicating episode data.

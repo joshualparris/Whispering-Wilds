@@ -1,3 +1,5 @@
+> **Agent handoff:** This is the **Python CLI** game, not the Parris Tech Services browser game. New agents must read [TASK_TRIAGE.md](TASK_TRIAGE.md), [AGENTS.md](AGENTS.md) and [WORK_CHECKPOINT.md](WORK_CHECKPOINT.md) before coding. First eligible task is **WW-I1.1** (subject to updated claims and proof). Check the existing [open PR #4](https://github.com/joshualparris/Whispering-Wilds/pull/4) before any refactor.
+
 # Whispering-Wilds
 Text based adventure
 # Whispering Wilds — tiny, extensible text adventure

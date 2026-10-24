@@ -1,3 +1,5 @@
+> **Agent routing:** Audit IDs `WW-PY-A01`–`WW-PY-A05` are stable task references, not the execution order. Start at [TASK_TRIAGE.md](../TASK_TRIAGE.md), which accounts for open issues, save safety and [PR #4](https://github.com/joshualparris/Whispering-Wilds/pull/4).
+
 # Whispering-Wilds — Beautiful Code Standard Audit
 
 **Audit date:** 17 September 2026  

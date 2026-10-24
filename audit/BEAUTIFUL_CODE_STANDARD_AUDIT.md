@@ -27,11 +27,11 @@ This repository has a stronger engineering baseline than many small projects in 
 
 ## Priorities
 
-1. Identify the most frequently changed or most conceptually distinct areas of `code.py` and extract only real modules with clear ownership.
-2. Add regression tests whenever bugs are fixed; grow tests around behaviour, not internal implementation trivia.
-3. Make the broader lint/static-analysis signal visible without `--exit-zero` hiding meaningful findings; decide deliberately which classes are gates and which are warnings.
-4. Add a dependency/security audit to CI if this remains actively distributed.
-5. Add one end-to-end smoke test for the primary user flow if this is an interactive application.
+1. **WW-PY-A01** Identify the most frequently changed or most conceptually distinct areas of `code.py` and extract only real modules with clear ownership.
+2. **WW-PY-A02** Add regression tests whenever bugs are fixed; grow tests around behaviour, not internal implementation trivia.
+3. **WW-PY-A03** Make the broader lint/static-analysis signal visible without `--exit-zero` hiding meaningful findings; decide deliberately which classes are gates and which are warnings.
+4. **WW-PY-A04** Add a dependency/security audit to CI if this remains actively distributed.
+5. **WW-PY-A05** Add one end-to-end smoke test for the primary user flow if this is an interactive application.
 
 ## Bottom line
 
